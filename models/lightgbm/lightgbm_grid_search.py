@@ -52,7 +52,7 @@ def main():
                 "parameterName": "num_leaves",
                 "type": "INTEGER",
                 "minValue": 63,
-                "maxValue": 255,
+                "maxValue": 512,
                 "feasiblePoints": "",
                 "scallingType": "LINEAR"
             },
@@ -90,31 +90,45 @@ def main():
             },
         ]
     }
-    study = client.create_study("Study", study_configuration,
+    study = client.create_study("lightgbm_search", study_configuration,
                               "BayesianOptimization")
     #study = client.get_study_by_id(21)
 
     # Get suggested trials
 
-    trials = client.get_suggestions(study.id, 5)
-    for i in range(5):
-        trial = trials[i]
-        parameter_value_dict = json.loads(trial.parameter_values)
-        logger.info("The suggested parameters: {}".format(parameter_value_dict))
-        metric = model.train(**parameter_value_dict)
-        client.complete_trial_with_one_metric(trial, metric)
+    # trials = client.get_suggestions(study.id, 5)
+    # for i in range(5):
+    #     trial = trials[i]
+    #     parameter_value_dict = json.loads(trial.parameter_values)
+    #     logger.info("The suggested parameters: {}".format(parameter_value_dict))
+    #     metric = model.train(**parameter_value_dict)
+    #     client.complete_trial_with_one_metric(trial, metric)
 
-    while not client.is_study_done(study.id):
+    for i in range(10):
+        # Get suggested trials
         trials = client.get_suggestions(study.id, 1)
-        assert len(trials) == 1
-        trial = trials[0]
-        parameter_value_dict = json.loads(trial.parameter_values)
-        logger.info("The suggested parameters: {}".format(parameter_value_dict))
-        metric = model.train(**parameter_value_dict)
-        client.complete_trial_with_one_metric(trial, metric)
 
-    best_trial = client.get_best_trial(study.id)
-    logger.info("The study: {}, best trial: {}".format(study, best_trial))
+        # Generate parameters
+        parameter_value_dicts = []
+        for trial in trials:
+            parameter_value_dict = json.loads(trial.parameter_values)
+            logger.info("The suggested parameters: {}".format(parameter_value_dict))
+            parameter_value_dicts.append(parameter_value_dict)
+
+        # Run training
+        metrics = []
+        for i in range(len(trials)):
+            metric = model.train(**parameter_value_dicts[i])
+            metrics.append(metric)
+
+        # Complete the trial
+        for i in range(len(trials)):
+            trial = trials[i]
+            client.complete_trial_with_one_metric(trial, metrics[i])
+        is_done = client.is_study_done(study.id)
+        assert is_done
+        best_trial = client.get_best_trial(study.id)
+        logger.info("The study: {}, best trial: {}".format(study, best_trial))
 
 
 if __name__ == "__main__":

@@ -72,6 +72,8 @@ class MyModel(object):
         }
         model_params['params'].update(params)
 
+        evals_result = dict()
         self.model = lgb.train(train_set=self.dataset_train, valid_sets=[self.dataset_train, self.dataset_valid],
-                               valid_names=['train', 'valid'], **model_params)
-        return self.model.eval_valid()
+                               valid_names=['train', 'valid'], **model_params, evals_result=evals_result)
+        logger.info('train summery:' + str(evals_result))
+        return min(evals_result['valid']['binary_logloss'])
