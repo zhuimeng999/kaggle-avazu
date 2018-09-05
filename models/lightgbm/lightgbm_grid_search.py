@@ -1,134 +1,130 @@
+#!/usr/bin/env python
 # coding: utf-8
 # pylint: disable = invalid-name, C0111
+
+import os
+import sys
 import json
-import lightgbm as lgb
-import numpy as np
-from sklearn.metrics import mean_squared_error
-import pickle
-import os, sys
+
+from advisor_client.client import AdvisorClient
 import logging
-import argparse
-from io import TextIOBase
+try:
+    from .my_model import MyModel
+except ImportError:
+    from models.lightgbm.my_model import MyModel
+
+logger = logging.getLogger('lightgbm grid search')
 
 
-def prepare_work():
-    search_work_dir = 'leave_l1_l2'
-    if os.path.exists(search_work_dir):
-        print('path is already exist !!!')
-        exit()
-    os.makedirs(search_work_dir)
-    os.chdir(search_work_dir)
-    
-    logger = logging.getLogger('lightgbm')
+def main():
+    client = AdvisorClient()
+
+    model = MyModel()
+    model.load_dataset()
+    # Get or create the study
+    study_configuration = {
+        "goal":
+        "MINIMIZE",
+        "randomInitTrials":
+        5,
+        "maxTrials":
+        30,
+        "maxParallelTrials":
+        1,
+        "params": [
+            {
+                "parameterName": "max_bin",
+                "type": "INTEGER",
+                "minValue": 63,
+                "maxValue": 511,
+                "feasiblePoints": "",
+                "scallingType": "LINEAR"
+            },
+            {
+                "parameterName": "bin_construct_sample_cnt",
+                "type": "INTEGER",
+                "minValue": 3,
+                "maxValue": 1000,
+                "feasiblePoints": "",
+                "scallingType": "LINEAR"
+            },
+            {
+                "parameterName": "num_leaves",
+                "type": "INTEGER",
+                "minValue": 63,
+                "maxValue": 255,
+                "feasiblePoints": "",
+                "scallingType": "LINEAR"
+            },
+            # {
+            #     "parameterName": "lambda_l2",
+            #     "type": "DOUBLE",
+            #     "minValue": 0.0,
+            #     "maxValue": 10.0,
+            #     "feasiblePoints": "",
+            #     "scallingType": "LINEAR"
+            # },
+            # {
+            #     "parameterName": "lambda_l1",
+            #     "type": "DOUBLE",
+            #     "minValue": 0.0,
+            #     "maxValue": 10.0,
+            #     "feasiblePoints": "",
+            #     "scallingType": "LINEAR"
+            # },
+            {
+                "parameterName": "cat_l2",
+                "type": "DOUBLE",
+                "minValue": 1.0,
+                "maxValue": 100.0,
+                "feasiblePoints": "",
+                "scallingType": "LINEAR"
+            },
+            {
+                "parameterName": "cat_smooth",
+                "type": "DOUBLE",
+                "minValue": 1.0,
+                "maxValue": 100.0,
+                "feasiblePoints": "",
+                "scallingType": "LINEAR"
+            },
+        ]
+    }
+    study = client.create_study("Study", study_configuration,
+                              "BayesianOptimization")
+    #study = client.get_study_by_id(21)
+
+    # Get suggested trials
+
+    trials = client.get_suggestions(study.id, 5)
+    for i in range(5):
+        trial = trials[i]
+        parameter_value_dict = json.loads(trial.parameter_values)
+        logger.info("The suggested parameters: {}".format(parameter_value_dict))
+        metric = model.train(**parameter_value_dict)
+        client.complete_trial_with_one_metric(trial, metric)
+
+    while not client.is_study_done(study.id):
+        trials = client.get_suggestions(study.id, 1)
+        assert len(trials) == 1
+        trial = trials[0]
+        parameter_value_dict = json.loads(trial.parameter_values)
+        logger.info("The suggested parameters: {}".format(parameter_value_dict))
+        metric = model.train(**parameter_value_dict)
+        client.complete_trial_with_one_metric(trial, metric)
+
+    best_trial = client.get_best_trial(study.id)
+    logger.info("The study: {}, best trial: {}".format(study, best_trial))
+
+
+if __name__ == "__main__":
+    curr_dir = os.path.dirname(__file__)
     logger.setLevel(logging.INFO)
-    my_format = logging.Formatter(fmt='{asctime}:{levelname}:{name}:{message}', style='{')
     log_handler = logging.StreamHandler(sys.stdout)
-    log_handler.setFormatter(my_format)
+    log_handler.setFormatter(logging.Formatter(fmt='{asctime}:{levelname}:{name}:{message}', style='{'))
     logger.addHandler(log_handler)
-    log_handler = logging.StreamHandler(open('search.log', 'w+'))
-    log_handler.setFormatter(my_format)
+    log_handler = logging.StreamHandler(open(os.path.join(curr_dir, 'search.log'), 'w+'))
+    log_handler.setFormatter(logging.Formatter(fmt='{asctime}:{levelname}:{name}:{message}', style='{'))
     logger.addHandler(log_handler)
-    
-    class tmp_stdout(TextIOBase):
-        def write(self, value):
-            logger.info(value.replace('\r', ''))
-    class tmp_stderr(TextIOBase):
-        def write(self, value):
-            logger.info(value)
-    sys.stdout = tmp_stdout()
-    sys.stderr = tmp_stderr()
-    
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Process some integers.')
-    parser.add_argument('--thresh-hold', type=int, default=0, help='an integer for the map')
-    args = parser.parse_args()
-    
-    curr_dir = os.path.abspath(os.path.dirname(__file__))
-    os.chdir(curr_dir)
-    prepare_work()
-    logger = logging.getLogger('lightgbm')
-    
-    TRAIN_DATA_PATH = os.path.join(curr_dir, '../../preprocess/output/train_raw_0.csv')
-    VALID_DATA_PATH = os.path.join(curr_dir, '../../preprocess/output/train_raw_0.csv')
-    
-    search_work_dir = 'leave_l1_l2'
-    if os.path.exists(search_work_dir):
-        print('path is already exist !!!')
-        exit()
-    os.makedirs(search_work_dir)
-    
-    with open(TRAIN_DATA_PATH, 'r') as f:
-        column_names = f.readline().strip().split(',')
-    print(column_names)
-    # load or create your dataset
-    print('Load data...')
-    # create dataset for lightgbm
-    # if you want to re-use data, remember to set free_raw_data=False
-    column_names.remove('click')
-    dataset_params = {
-        'free_raw_data': False,
-        'silent': False,
-        'feature_name': column_names,
-        'categorical_feature': None,
-        'params': {
-            'header': True,
-            'label_column': 'name:click',
-            'ignore_column': 'name:id',
-            }
-        }
-    lgb_train = lgb.Dataset(TRAIN_DATA_PATH, **dataset_params)
-    lgb_valid = lgb.Dataset(VALID_DATA_PATH,reference=lgb_train, **dataset_params)
 
-    num_leaves_grid = [63, 127, 255, 511]
-    lambda_l1_grid = [0, 0.001, 0.01, 0.1]
-    lambda_l2_grid = [0, 0.001, 0.01, 0.1]
-    
-    
-    grid_search_list = []
-    for num_leaves in num_leaves_grid:
-        for lambda_l1 in lambda_l1_grid:
-            for lambda_l2 in lambda_l2_grid:
-                grid_search_list.append(
-                    {'num_leaves':num_leaves, 'lambda_l1': lambda_l1, 'lambda_l2':lambda_l2})
-    for s_dict in grid_search_list:
-                logger.info('current params: '+ str(s_dict))
-                # specify your configurations as a dict
-                model_params = {
-                    'boosting_type': 'gbdt',
-                    'objective': 'binary',
-                    'metric': 'binary_logloss',
-                    'metric_freq': 1,
-                    'is_training_metric': True,
-                    'num_leaves': s_dict['num_leaves'],
-                    'learning_rate': 0.1,
-                    'feature_fraction': 0.9,
-                    'bagging_fraction': 0.8,
-                    'bagging_freq': 5,
-                    'num_leaves': 255,
-                    'num_bin': 255,
-                    'bin_construct_sample_cnt': 3,
-                    'min_data_in_leaf': 50,
-                    'min_sum_hessian_in_leaf': 5.0,
-                    'use_two_round_loading = false': False,
-                    'lambda_l1': s_dict['lambda_l1'],
-                    'lambda_l2': s_dict['lambda_l2'],
-                    'verbose': 0
-                }
-            
-                print('Start training...')
-                # feature_name and categorical_feature
-                gbm = lgb.train(model_params,
-                                lgb_train,
-                                num_boost_round=100,
-                                valid_sets=lgb_valid,  # eval training data
-                                categorical_feature=column_names[1:]
-                                )
-            
-                # save model to file
-                print('save model to file...')
-                
-                model_name = 'model_'
-                model_name = model_name + str(s_dict['num_leaves']) + '_'
-                model_name = model_name + str(s_dict['lambda_l1']) + '_' 
-                model_name = model_name + str(s_dict['lambda_l2']) + '.txt'
-                gbm.save_model(model_name)
+    main()
