@@ -1,0 +1,1770 @@
+2018-09-05 16:38:20,139:INFO:lightgbm:['id', 'click', 'hour', 'C1', 'banner_pos', 'site_id', 'site_domain', 'site_category', 'app_id', 'app_domain', 'app_category', 'device_id', 'device_ip', 'device_model', 'device_type', 'device_conn_type', 'C14', 'C15', 'C16', 'C17', 'C18', 'C19', 'C20', 'C21', 'weekday']
+2018-09-05 16:38:20,139:INFO:lightgbm:
+
+2018-09-05 16:38:20,139:INFO:lightgbm:Load data...
+2018-09-05 16:38:20,139:INFO:lightgbm:
+
+2018-09-05 16:38:20,139:INFO:lightgbm:Start training...
+2018-09-05 16:38:20,139:INFO:lightgbm:
+
+2018-09-05 16:38:20,202:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.45735
+2018-09-05 16:38:20,202:INFO:lightgbm:
+
+2018-09-05 16:38:20,203:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455213
+2018-09-05 16:38:20,203:INFO:lightgbm:
+
+2018-09-05 16:38:20,203:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453055
+2018-09-05 16:38:20,203:INFO:lightgbm:
+
+2018-09-05 16:38:20,203:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451229
+2018-09-05 16:38:20,203:INFO:lightgbm:
+
+2018-09-05 16:38:20,203:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449467
+2018-09-05 16:38:20,203:INFO:lightgbm:
+
+2018-09-05 16:38:20,203:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447907
+2018-09-05 16:38:20,203:INFO:lightgbm:
+
+2018-09-05 16:38:20,234:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446874
+2018-09-05 16:38:20,234:INFO:lightgbm:
+
+2018-09-05 16:38:20,234:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.44594
+2018-09-05 16:38:20,234:INFO:lightgbm:
+
+2018-09-05 16:38:20,234:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444685
+2018-09-05 16:38:20,234:INFO:lightgbm:
+
+2018-09-05 16:38:20,234:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443566
+2018-09-05 16:38:20,234:INFO:lightgbm:
+
+2018-09-05 16:38:20,234:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:20,234:INFO:lightgbm:
+
+2018-09-05 16:38:20,234:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:20,234:INFO:lightgbm: 
+2018-09-05 16:38:20,234:INFO:lightgbm:'site_category'
+2018-09-05 16:38:20,234:INFO:lightgbm:
+
+2018-09-05 16:38:20,234:INFO:lightgbm:save model to file...
+2018-09-05 16:38:20,234:INFO:lightgbm:
+
+2018-09-05 16:38:20,249:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:20,249:INFO:lightgbm: 
+2018-09-05 16:38:20,249:INFO:lightgbm:[0, 0, 8, 26, 17, 4, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 29, 19, 7, 8, 0]
+2018-09-05 16:38:20,249:INFO:lightgbm:
+
+2018-09-05 16:38:20,249:INFO:lightgbm:Start training...
+2018-09-05 16:38:20,249:INFO:lightgbm:
+
+2018-09-05 16:38:20,249:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457351
+2018-09-05 16:38:20,249:INFO:lightgbm:
+
+2018-09-05 16:38:20,249:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455215
+2018-09-05 16:38:20,249:INFO:lightgbm:
+
+2018-09-05 16:38:20,249:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453057
+2018-09-05 16:38:20,249:INFO:lightgbm:
+
+2018-09-05 16:38:20,249:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451232
+2018-09-05 16:38:20,249:INFO:lightgbm:
+
+2018-09-05 16:38:20,249:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.44947
+2018-09-05 16:38:20,249:INFO:lightgbm:
+
+2018-09-05 16:38:20,265:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.44791
+2018-09-05 16:38:20,265:INFO:lightgbm:
+
+2018-09-05 16:38:20,265:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446878
+2018-09-05 16:38:20,265:INFO:lightgbm:
+
+2018-09-05 16:38:20,265:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445943
+2018-09-05 16:38:20,265:INFO:lightgbm:
+
+2018-09-05 16:38:20,265:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444688
+2018-09-05 16:38:20,265:INFO:lightgbm:
+
+2018-09-05 16:38:20,281:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.44357
+2018-09-05 16:38:20,281:INFO:lightgbm:
+
+2018-09-05 16:38:20,296:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:20,296:INFO:lightgbm:
+
+2018-09-05 16:38:20,296:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:20,296:INFO:lightgbm: 
+2018-09-05 16:38:20,296:INFO:lightgbm:'site_category'
+2018-09-05 16:38:20,296:INFO:lightgbm:
+
+2018-09-05 16:38:20,296:INFO:lightgbm:save model to file...
+2018-09-05 16:38:20,296:INFO:lightgbm:
+
+2018-09-05 16:38:20,312:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:20,312:INFO:lightgbm: 
+2018-09-05 16:38:20,312:INFO:lightgbm:[0, 0, 8, 26, 17, 4, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 29, 19, 7, 8, 0]
+2018-09-05 16:38:20,312:INFO:lightgbm:
+
+2018-09-05 16:38:20,312:INFO:lightgbm:Start training...
+2018-09-05 16:38:20,312:INFO:lightgbm:
+
+2018-09-05 16:38:20,624:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457359
+2018-09-05 16:38:20,624:INFO:lightgbm:
+
+2018-09-05 16:38:20,624:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.45523
+2018-09-05 16:38:20,624:INFO:lightgbm:
+
+2018-09-05 16:38:20,624:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.45308
+2018-09-05 16:38:20,624:INFO:lightgbm:
+
+2018-09-05 16:38:20,624:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451259
+2018-09-05 16:38:20,624:INFO:lightgbm:
+
+2018-09-05 16:38:20,639:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449502
+2018-09-05 16:38:20,639:INFO:lightgbm:
+
+2018-09-05 16:38:20,639:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447945
+2018-09-05 16:38:20,639:INFO:lightgbm:
+
+2018-09-05 16:38:20,639:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446915
+2018-09-05 16:38:20,639:INFO:lightgbm:
+
+2018-09-05 16:38:20,639:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445982
+2018-09-05 16:38:20,639:INFO:lightgbm:
+
+2018-09-05 16:38:20,639:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444728
+2018-09-05 16:38:20,639:INFO:lightgbm:
+
+2018-09-05 16:38:20,639:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443611
+2018-09-05 16:38:20,639:INFO:lightgbm:
+
+2018-09-05 16:38:20,639:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:20,639:INFO:lightgbm:
+
+2018-09-05 16:38:20,639:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:20,639:INFO:lightgbm: 
+2018-09-05 16:38:20,639:INFO:lightgbm:'site_category'
+2018-09-05 16:38:20,639:INFO:lightgbm:
+
+2018-09-05 16:38:20,639:INFO:lightgbm:save model to file...
+2018-09-05 16:38:20,639:INFO:lightgbm:
+
+2018-09-05 16:38:20,655:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:20,655:INFO:lightgbm: 
+2018-09-05 16:38:20,655:INFO:lightgbm:[0, 0, 8, 26, 17, 2, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 28, 19, 6, 8, 0]
+2018-09-05 16:38:20,655:INFO:lightgbm:
+
+2018-09-05 16:38:20,655:INFO:lightgbm:Start training...
+2018-09-05 16:38:20,655:INFO:lightgbm:
+
+2018-09-05 16:38:20,655:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457351
+2018-09-05 16:38:20,655:INFO:lightgbm:
+
+2018-09-05 16:38:20,655:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455216
+2018-09-05 16:38:20,655:INFO:lightgbm:
+
+2018-09-05 16:38:20,655:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453058
+2018-09-05 16:38:20,655:INFO:lightgbm:
+
+2018-09-05 16:38:20,671:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451233
+2018-09-05 16:38:20,671:INFO:lightgbm:
+
+2018-09-05 16:38:20,671:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449473
+2018-09-05 16:38:20,671:INFO:lightgbm:
+
+2018-09-05 16:38:20,671:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447913
+2018-09-05 16:38:20,671:INFO:lightgbm:
+
+2018-09-05 16:38:20,671:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.44688
+2018-09-05 16:38:20,671:INFO:lightgbm:
+
+2018-09-05 16:38:20,671:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445946
+2018-09-05 16:38:20,671:INFO:lightgbm:
+
+2018-09-05 16:38:20,671:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444691
+2018-09-05 16:38:20,671:INFO:lightgbm:
+
+2018-09-05 16:38:20,671:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443573
+2018-09-05 16:38:20,671:INFO:lightgbm:
+
+2018-09-05 16:38:20,686:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:20,686:INFO:lightgbm:
+
+2018-09-05 16:38:20,686:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:20,686:INFO:lightgbm: 
+2018-09-05 16:38:20,686:INFO:lightgbm:'site_category'
+2018-09-05 16:38:20,686:INFO:lightgbm:
+
+2018-09-05 16:38:20,686:INFO:lightgbm:save model to file...
+2018-09-05 16:38:20,686:INFO:lightgbm:
+
+2018-09-05 16:38:20,686:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:20,686:INFO:lightgbm: 
+2018-09-05 16:38:20,686:INFO:lightgbm:[0, 0, 8, 26, 17, 3, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 29, 19, 6, 8, 0]
+2018-09-05 16:38:20,686:INFO:lightgbm:
+
+2018-09-05 16:38:20,686:INFO:lightgbm:Start training...
+2018-09-05 16:38:20,686:INFO:lightgbm:
+
+2018-09-05 16:38:20,686:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457352
+2018-09-05 16:38:20,686:INFO:lightgbm:
+
+2018-09-05 16:38:20,702:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455217
+2018-09-05 16:38:20,702:INFO:lightgbm:
+
+2018-09-05 16:38:20,702:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.45306
+2018-09-05 16:38:20,702:INFO:lightgbm:
+
+2018-09-05 16:38:20,702:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451236
+2018-09-05 16:38:20,702:INFO:lightgbm:
+
+2018-09-05 16:38:20,702:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449476
+2018-09-05 16:38:20,702:INFO:lightgbm:
+
+2018-09-05 16:38:20,702:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447916
+2018-09-05 16:38:20,702:INFO:lightgbm:
+
+2018-09-05 16:38:20,702:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446884
+2018-09-05 16:38:20,702:INFO:lightgbm:
+
+2018-09-05 16:38:20,702:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.44595
+2018-09-05 16:38:20,702:INFO:lightgbm:
+
+2018-09-05 16:38:20,717:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444695
+2018-09-05 16:38:20,717:INFO:lightgbm:
+
+2018-09-05 16:38:20,717:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443577
+2018-09-05 16:38:20,717:INFO:lightgbm:
+
+2018-09-05 16:38:20,717:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:20,717:INFO:lightgbm:
+
+2018-09-05 16:38:20,717:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:20,717:INFO:lightgbm: 
+2018-09-05 16:38:20,717:INFO:lightgbm:'site_category'
+2018-09-05 16:38:20,717:INFO:lightgbm:
+
+2018-09-05 16:38:20,717:INFO:lightgbm:save model to file...
+2018-09-05 16:38:20,717:INFO:lightgbm:
+
+2018-09-05 16:38:20,717:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:20,717:INFO:lightgbm: 
+2018-09-05 16:38:20,717:INFO:lightgbm:[0, 0, 8, 26, 17, 3, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 29, 19, 6, 8, 0]
+2018-09-05 16:38:20,717:INFO:lightgbm:
+
+2018-09-05 16:38:20,717:INFO:lightgbm:Start training...
+2018-09-05 16:38:20,717:INFO:lightgbm:
+
+2018-09-05 16:38:20,733:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.45736
+2018-09-05 16:38:20,733:INFO:lightgbm:
+
+2018-09-05 16:38:20,733:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.45523
+2018-09-05 16:38:20,733:INFO:lightgbm:
+
+2018-09-05 16:38:20,733:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453079
+2018-09-05 16:38:20,733:INFO:lightgbm:
+
+2018-09-05 16:38:20,733:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.45126
+2018-09-05 16:38:20,733:INFO:lightgbm:
+
+2018-09-05 16:38:20,733:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449501
+2018-09-05 16:38:20,733:INFO:lightgbm:
+
+2018-09-05 16:38:20,733:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447946
+2018-09-05 16:38:20,733:INFO:lightgbm:
+
+2018-09-05 16:38:20,733:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446916
+2018-09-05 16:38:20,733:INFO:lightgbm:
+
+2018-09-05 16:38:20,749:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445983
+2018-09-05 16:38:20,749:INFO:lightgbm:
+
+2018-09-05 16:38:20,749:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.44473
+2018-09-05 16:38:20,749:INFO:lightgbm:
+
+2018-09-05 16:38:20,764:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443613
+2018-09-05 16:38:20,764:INFO:lightgbm:
+
+2018-09-05 16:38:20,764:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:20,764:INFO:lightgbm:
+
+2018-09-05 16:38:20,764:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:20,764:INFO:lightgbm: 
+2018-09-05 16:38:20,764:INFO:lightgbm:'site_category'
+2018-09-05 16:38:20,764:INFO:lightgbm:
+
+2018-09-05 16:38:20,764:INFO:lightgbm:save model to file...
+2018-09-05 16:38:20,764:INFO:lightgbm:
+
+2018-09-05 16:38:20,780:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:20,780:INFO:lightgbm: 
+2018-09-05 16:38:20,780:INFO:lightgbm:[0, 0, 5, 26, 17, 2, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 27, 19, 6, 8, 0]
+2018-09-05 16:38:20,780:INFO:lightgbm:
+
+2018-09-05 16:38:20,780:INFO:lightgbm:Start training...
+2018-09-05 16:38:20,780:INFO:lightgbm:
+
+2018-09-05 16:38:20,780:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457361
+2018-09-05 16:38:20,780:INFO:lightgbm:
+
+2018-09-05 16:38:20,780:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455234
+2018-09-05 16:38:20,780:INFO:lightgbm:
+
+2018-09-05 16:38:20,780:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453084
+2018-09-05 16:38:20,780:INFO:lightgbm:
+
+2018-09-05 16:38:20,780:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451267
+2018-09-05 16:38:20,780:INFO:lightgbm:
+
+2018-09-05 16:38:20,781:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449511
+2018-09-05 16:38:20,781:INFO:lightgbm:
+
+2018-09-05 16:38:20,781:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447958
+2018-09-05 16:38:20,781:INFO:lightgbm:
+
+2018-09-05 16:38:20,781:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446928
+2018-09-05 16:38:20,781:INFO:lightgbm:
+
+2018-09-05 16:38:20,781:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445997
+2018-09-05 16:38:20,781:INFO:lightgbm:
+
+2018-09-05 16:38:20,781:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444747
+2018-09-05 16:38:20,781:INFO:lightgbm:
+
+2018-09-05 16:38:20,781:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443632
+2018-09-05 16:38:20,781:INFO:lightgbm:
+
+2018-09-05 16:38:20,781:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:20,781:INFO:lightgbm:
+
+2018-09-05 16:38:20,781:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:20,781:INFO:lightgbm: 
+2018-09-05 16:38:20,781:INFO:lightgbm:'site_category'
+2018-09-05 16:38:20,781:INFO:lightgbm:
+
+2018-09-05 16:38:20,781:INFO:lightgbm:save model to file...
+2018-09-05 16:38:20,781:INFO:lightgbm:
+
+2018-09-05 16:38:20,783:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:20,783:INFO:lightgbm: 
+2018-09-05 16:38:20,783:INFO:lightgbm:[0, 0, 5, 26, 17, 2, 12, 0, 4, 19, 0, 0, 0, 0, 0, 8, 0, 8, 16, 24, 19, 5, 8, 0]
+2018-09-05 16:38:20,783:INFO:lightgbm:
+
+2018-09-05 16:38:20,783:INFO:lightgbm:Start training...
+2018-09-05 16:38:20,784:INFO:lightgbm:
+
+2018-09-05 16:38:20,790:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457362
+2018-09-05 16:38:20,790:INFO:lightgbm:
+
+2018-09-05 16:38:20,792:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455235
+2018-09-05 16:38:20,792:INFO:lightgbm:
+
+2018-09-05 16:38:20,794:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453086
+2018-09-05 16:38:20,794:INFO:lightgbm:
+
+2018-09-05 16:38:20,797:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451269
+2018-09-05 16:38:20,797:INFO:lightgbm:
+
+2018-09-05 16:38:20,799:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449514
+2018-09-05 16:38:20,799:INFO:lightgbm:
+
+2018-09-05 16:38:20,801:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447961
+2018-09-05 16:38:20,801:INFO:lightgbm:
+
+2018-09-05 16:38:20,833:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446932
+2018-09-05 16:38:20,833:INFO:lightgbm:
+
+2018-09-05 16:38:20,833:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.446001
+2018-09-05 16:38:20,833:INFO:lightgbm:
+
+2018-09-05 16:38:20,833:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.44475
+2018-09-05 16:38:20,833:INFO:lightgbm:
+
+2018-09-05 16:38:20,833:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443635
+2018-09-05 16:38:20,833:INFO:lightgbm:
+
+2018-09-05 16:38:20,833:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:20,833:INFO:lightgbm:
+
+2018-09-05 16:38:20,833:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:20,833:INFO:lightgbm: 
+2018-09-05 16:38:20,833:INFO:lightgbm:'site_category'
+2018-09-05 16:38:20,833:INFO:lightgbm:
+
+2018-09-05 16:38:20,833:INFO:lightgbm:save model to file...
+2018-09-05 16:38:20,833:INFO:lightgbm:
+
+2018-09-05 16:38:20,833:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:20,833:INFO:lightgbm: 
+2018-09-05 16:38:20,833:INFO:lightgbm:[0, 0, 5, 26, 17, 2, 12, 0, 4, 18, 0, 0, 0, 0, 0, 8, 0, 8, 16, 24, 19, 5, 8, 0]
+2018-09-05 16:38:20,833:INFO:lightgbm:
+
+2018-09-05 16:38:20,833:INFO:lightgbm:Start training...
+2018-09-05 16:38:20,833:INFO:lightgbm:
+
+2018-09-05 16:38:20,849:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.45737
+2018-09-05 16:38:20,849:INFO:lightgbm:
+
+2018-09-05 16:38:20,849:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455249
+2018-09-05 16:38:20,849:INFO:lightgbm:
+
+2018-09-05 16:38:20,849:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453105
+2018-09-05 16:38:20,849:INFO:lightgbm:
+
+2018-09-05 16:38:20,849:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451292
+2018-09-05 16:38:20,849:INFO:lightgbm:
+
+2018-09-05 16:38:20,849:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.44954
+2018-09-05 16:38:20,849:INFO:lightgbm:
+
+2018-09-05 16:38:20,849:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447999
+2018-09-05 16:38:20,849:INFO:lightgbm:
+
+2018-09-05 16:38:20,864:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446971
+2018-09-05 16:38:20,864:INFO:lightgbm:
+
+2018-09-05 16:38:20,864:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.446042
+2018-09-05 16:38:20,864:INFO:lightgbm:
+
+2018-09-05 16:38:20,864:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.4448
+2018-09-05 16:38:20,864:INFO:lightgbm:
+
+2018-09-05 16:38:20,864:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443694
+2018-09-05 16:38:20,864:INFO:lightgbm:
+
+2018-09-05 16:38:20,864:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:20,864:INFO:lightgbm:
+
+2018-09-05 16:38:20,864:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:20,864:INFO:lightgbm: 
+2018-09-05 16:38:20,864:INFO:lightgbm:'site_category'
+2018-09-05 16:38:20,864:INFO:lightgbm:
+
+2018-09-05 16:38:20,864:INFO:lightgbm:save model to file...
+2018-09-05 16:38:20,864:INFO:lightgbm:
+
+2018-09-05 16:38:20,864:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:20,864:INFO:lightgbm: 
+2018-09-05 16:38:20,864:INFO:lightgbm:[0, 0, 2, 26, 17, 2, 12, 0, 4, 18, 0, 0, 0, 0, 0, 8, 0, 8, 16, 24, 19, 5, 8, 0]
+2018-09-05 16:38:20,864:INFO:lightgbm:
+
+2018-09-05 16:38:20,864:INFO:lightgbm:Start training...
+2018-09-05 16:38:20,864:INFO:lightgbm:
+
+2018-09-05 16:38:20,895:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.45735
+2018-09-05 16:38:20,895:INFO:lightgbm:
+
+2018-09-05 16:38:20,895:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455213
+2018-09-05 16:38:20,895:INFO:lightgbm:
+
+2018-09-05 16:38:20,895:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453055
+2018-09-05 16:38:20,895:INFO:lightgbm:
+
+2018-09-05 16:38:20,895:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451229
+2018-09-05 16:38:20,895:INFO:lightgbm:
+
+2018-09-05 16:38:20,895:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449467
+2018-09-05 16:38:20,895:INFO:lightgbm:
+
+2018-09-05 16:38:20,895:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447907
+2018-09-05 16:38:20,895:INFO:lightgbm:
+
+2018-09-05 16:38:20,895:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446874
+2018-09-05 16:38:20,895:INFO:lightgbm:
+
+2018-09-05 16:38:20,895:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.44594
+2018-09-05 16:38:20,895:INFO:lightgbm:
+
+2018-09-05 16:38:20,911:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444685
+2018-09-05 16:38:20,911:INFO:lightgbm:
+
+2018-09-05 16:38:20,911:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443566
+2018-09-05 16:38:20,911:INFO:lightgbm:
+
+2018-09-05 16:38:20,911:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:20,911:INFO:lightgbm:
+
+2018-09-05 16:38:20,911:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:20,911:INFO:lightgbm: 
+2018-09-05 16:38:20,911:INFO:lightgbm:'site_category'
+2018-09-05 16:38:20,911:INFO:lightgbm:
+
+2018-09-05 16:38:20,911:INFO:lightgbm:save model to file...
+2018-09-05 16:38:20,911:INFO:lightgbm:
+
+2018-09-05 16:38:20,911:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:20,911:INFO:lightgbm: 
+2018-09-05 16:38:20,911:INFO:lightgbm:[0, 0, 8, 26, 17, 4, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 29, 19, 7, 8, 0]
+2018-09-05 16:38:20,911:INFO:lightgbm:
+
+2018-09-05 16:38:20,911:INFO:lightgbm:Start training...
+2018-09-05 16:38:20,911:INFO:lightgbm:
+
+2018-09-05 16:38:20,927:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457351
+2018-09-05 16:38:20,927:INFO:lightgbm:
+
+2018-09-05 16:38:20,927:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455215
+2018-09-05 16:38:20,927:INFO:lightgbm:
+
+2018-09-05 16:38:20,927:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453057
+2018-09-05 16:38:20,927:INFO:lightgbm:
+
+2018-09-05 16:38:20,927:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451232
+2018-09-05 16:38:20,927:INFO:lightgbm:
+
+2018-09-05 16:38:20,927:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.44947
+2018-09-05 16:38:20,927:INFO:lightgbm:
+
+2018-09-05 16:38:20,927:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.44791
+2018-09-05 16:38:20,927:INFO:lightgbm:
+
+2018-09-05 16:38:20,927:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446878
+2018-09-05 16:38:20,927:INFO:lightgbm:
+
+2018-09-05 16:38:20,942:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445943
+2018-09-05 16:38:20,942:INFO:lightgbm:
+
+2018-09-05 16:38:20,942:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444688
+2018-09-05 16:38:20,942:INFO:lightgbm:
+
+2018-09-05 16:38:20,958:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.44357
+2018-09-05 16:38:20,958:INFO:lightgbm:
+
+2018-09-05 16:38:20,958:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:20,958:INFO:lightgbm:
+
+2018-09-05 16:38:20,958:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:20,958:INFO:lightgbm: 
+2018-09-05 16:38:20,958:INFO:lightgbm:'site_category'
+2018-09-05 16:38:20,958:INFO:lightgbm:
+
+2018-09-05 16:38:20,958:INFO:lightgbm:save model to file...
+2018-09-05 16:38:20,958:INFO:lightgbm:
+
+2018-09-05 16:38:20,958:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:20,958:INFO:lightgbm: 
+2018-09-05 16:38:20,958:INFO:lightgbm:[0, 0, 8, 26, 17, 4, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 29, 19, 7, 8, 0]
+2018-09-05 16:38:20,958:INFO:lightgbm:
+
+2018-09-05 16:38:20,958:INFO:lightgbm:Start training...
+2018-09-05 16:38:20,958:INFO:lightgbm:
+
+2018-09-05 16:38:20,958:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457359
+2018-09-05 16:38:20,958:INFO:lightgbm:
+
+2018-09-05 16:38:20,958:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.45523
+2018-09-05 16:38:20,958:INFO:lightgbm:
+
+2018-09-05 16:38:20,973:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.45308
+2018-09-05 16:38:20,973:INFO:lightgbm:
+
+2018-09-05 16:38:20,973:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451259
+2018-09-05 16:38:20,973:INFO:lightgbm:
+
+2018-09-05 16:38:20,973:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449502
+2018-09-05 16:38:20,973:INFO:lightgbm:
+
+2018-09-05 16:38:20,973:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447945
+2018-09-05 16:38:20,973:INFO:lightgbm:
+
+2018-09-05 16:38:20,973:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446915
+2018-09-05 16:38:20,973:INFO:lightgbm:
+
+2018-09-05 16:38:20,973:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445982
+2018-09-05 16:38:20,973:INFO:lightgbm:
+
+2018-09-05 16:38:20,989:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444728
+2018-09-05 16:38:20,989:INFO:lightgbm:
+
+2018-09-05 16:38:20,989:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443611
+2018-09-05 16:38:20,989:INFO:lightgbm:
+
+2018-09-05 16:38:20,989:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:20,989:INFO:lightgbm:
+
+2018-09-05 16:38:20,989:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:20,989:INFO:lightgbm: 
+2018-09-05 16:38:20,989:INFO:lightgbm:'site_category'
+2018-09-05 16:38:20,989:INFO:lightgbm:
+
+2018-09-05 16:38:20,989:INFO:lightgbm:save model to file...
+2018-09-05 16:38:20,989:INFO:lightgbm:
+
+2018-09-05 16:38:20,989:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:20,989:INFO:lightgbm: 
+2018-09-05 16:38:20,989:INFO:lightgbm:[0, 0, 8, 26, 17, 2, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 28, 19, 6, 8, 0]
+2018-09-05 16:38:20,989:INFO:lightgbm:
+
+2018-09-05 16:38:20,989:INFO:lightgbm:Start training...
+2018-09-05 16:38:20,989:INFO:lightgbm:
+
+2018-09-05 16:38:21,020:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457351
+2018-09-05 16:38:21,020:INFO:lightgbm:
+
+2018-09-05 16:38:21,020:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455216
+2018-09-05 16:38:21,020:INFO:lightgbm:
+
+2018-09-05 16:38:21,020:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453058
+2018-09-05 16:38:21,020:INFO:lightgbm:
+
+2018-09-05 16:38:21,036:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451233
+2018-09-05 16:38:21,036:INFO:lightgbm:
+
+2018-09-05 16:38:21,036:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449473
+2018-09-05 16:38:21,036:INFO:lightgbm:
+
+2018-09-05 16:38:21,036:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447913
+2018-09-05 16:38:21,036:INFO:lightgbm:
+
+2018-09-05 16:38:21,036:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.44688
+2018-09-05 16:38:21,036:INFO:lightgbm:
+
+2018-09-05 16:38:21,036:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445946
+2018-09-05 16:38:21,036:INFO:lightgbm:
+
+2018-09-05 16:38:21,036:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444691
+2018-09-05 16:38:21,036:INFO:lightgbm:
+
+2018-09-05 16:38:21,036:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443573
+2018-09-05 16:38:21,036:INFO:lightgbm:
+
+2018-09-05 16:38:21,051:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,051:INFO:lightgbm:
+
+2018-09-05 16:38:21,051:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,051:INFO:lightgbm: 
+2018-09-05 16:38:21,051:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,051:INFO:lightgbm:
+
+2018-09-05 16:38:21,051:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,051:INFO:lightgbm:
+
+2018-09-05 16:38:21,051:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,051:INFO:lightgbm: 
+2018-09-05 16:38:21,051:INFO:lightgbm:[0, 0, 8, 26, 17, 3, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 29, 19, 6, 8, 0]
+2018-09-05 16:38:21,051:INFO:lightgbm:
+
+2018-09-05 16:38:21,051:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,051:INFO:lightgbm:
+
+2018-09-05 16:38:21,051:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457352
+2018-09-05 16:38:21,051:INFO:lightgbm:
+
+2018-09-05 16:38:21,051:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455217
+2018-09-05 16:38:21,051:INFO:lightgbm:
+
+2018-09-05 16:38:21,051:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.45306
+2018-09-05 16:38:21,051:INFO:lightgbm:
+
+2018-09-05 16:38:21,067:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451236
+2018-09-05 16:38:21,067:INFO:lightgbm:
+
+2018-09-05 16:38:21,067:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449476
+2018-09-05 16:38:21,067:INFO:lightgbm:
+
+2018-09-05 16:38:21,067:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447916
+2018-09-05 16:38:21,067:INFO:lightgbm:
+
+2018-09-05 16:38:21,083:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446884
+2018-09-05 16:38:21,083:INFO:lightgbm:
+
+2018-09-05 16:38:21,083:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.44595
+2018-09-05 16:38:21,083:INFO:lightgbm:
+
+2018-09-05 16:38:21,083:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444695
+2018-09-05 16:38:21,083:INFO:lightgbm:
+
+2018-09-05 16:38:21,083:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443577
+2018-09-05 16:38:21,083:INFO:lightgbm:
+
+2018-09-05 16:38:21,083:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,083:INFO:lightgbm:
+
+2018-09-05 16:38:21,083:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,083:INFO:lightgbm: 
+2018-09-05 16:38:21,083:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,083:INFO:lightgbm:
+
+2018-09-05 16:38:21,083:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,083:INFO:lightgbm:
+
+2018-09-05 16:38:21,098:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,098:INFO:lightgbm: 
+2018-09-05 16:38:21,098:INFO:lightgbm:[0, 0, 8, 26, 17, 3, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 29, 19, 6, 8, 0]
+2018-09-05 16:38:21,098:INFO:lightgbm:
+
+2018-09-05 16:38:21,098:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,098:INFO:lightgbm:
+
+2018-09-05 16:38:21,098:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.45736
+2018-09-05 16:38:21,098:INFO:lightgbm:
+
+2018-09-05 16:38:21,098:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.45523
+2018-09-05 16:38:21,098:INFO:lightgbm:
+
+2018-09-05 16:38:21,098:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453079
+2018-09-05 16:38:21,098:INFO:lightgbm:
+
+2018-09-05 16:38:21,114:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.45126
+2018-09-05 16:38:21,114:INFO:lightgbm:
+
+2018-09-05 16:38:21,176:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449501
+2018-09-05 16:38:21,176:INFO:lightgbm:
+
+2018-09-05 16:38:21,176:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447946
+2018-09-05 16:38:21,176:INFO:lightgbm:
+
+2018-09-05 16:38:21,176:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446916
+2018-09-05 16:38:21,176:INFO:lightgbm:
+
+2018-09-05 16:38:21,176:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445983
+2018-09-05 16:38:21,176:INFO:lightgbm:
+
+2018-09-05 16:38:21,192:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.44473
+2018-09-05 16:38:21,192:INFO:lightgbm:
+
+2018-09-05 16:38:21,192:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443613
+2018-09-05 16:38:21,192:INFO:lightgbm:
+
+2018-09-05 16:38:21,192:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,192:INFO:lightgbm:
+
+2018-09-05 16:38:21,192:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,192:INFO:lightgbm: 
+2018-09-05 16:38:21,192:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,192:INFO:lightgbm:
+
+2018-09-05 16:38:21,192:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,192:INFO:lightgbm:
+
+2018-09-05 16:38:21,192:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,192:INFO:lightgbm: 
+2018-09-05 16:38:21,192:INFO:lightgbm:[0, 0, 5, 26, 17, 2, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 27, 19, 6, 8, 0]
+2018-09-05 16:38:21,192:INFO:lightgbm:
+
+2018-09-05 16:38:21,192:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,192:INFO:lightgbm:
+
+2018-09-05 16:38:21,192:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457361
+2018-09-05 16:38:21,192:INFO:lightgbm:
+
+2018-09-05 16:38:21,207:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455234
+2018-09-05 16:38:21,207:INFO:lightgbm:
+
+2018-09-05 16:38:21,207:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453084
+2018-09-05 16:38:21,207:INFO:lightgbm:
+
+2018-09-05 16:38:21,207:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451267
+2018-09-05 16:38:21,207:INFO:lightgbm:
+
+2018-09-05 16:38:21,207:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449511
+2018-09-05 16:38:21,207:INFO:lightgbm:
+
+2018-09-05 16:38:21,207:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447958
+2018-09-05 16:38:21,207:INFO:lightgbm:
+
+2018-09-05 16:38:21,207:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446928
+2018-09-05 16:38:21,207:INFO:lightgbm:
+
+2018-09-05 16:38:21,207:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445997
+2018-09-05 16:38:21,207:INFO:lightgbm:
+
+2018-09-05 16:38:21,207:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444747
+2018-09-05 16:38:21,207:INFO:lightgbm:
+
+2018-09-05 16:38:21,207:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443632
+2018-09-05 16:38:21,207:INFO:lightgbm:
+
+2018-09-05 16:38:21,207:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,207:INFO:lightgbm:
+
+2018-09-05 16:38:21,207:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,207:INFO:lightgbm: 
+2018-09-05 16:38:21,207:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,207:INFO:lightgbm:
+
+2018-09-05 16:38:21,207:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,207:INFO:lightgbm:
+
+2018-09-05 16:38:21,208:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,208:INFO:lightgbm: 
+2018-09-05 16:38:21,208:INFO:lightgbm:[0, 0, 5, 26, 17, 2, 12, 0, 4, 19, 0, 0, 0, 0, 0, 8, 0, 8, 16, 24, 19, 5, 8, 0]
+2018-09-05 16:38:21,208:INFO:lightgbm:
+
+2018-09-05 16:38:21,208:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,208:INFO:lightgbm:
+
+2018-09-05 16:38:21,208:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457362
+2018-09-05 16:38:21,208:INFO:lightgbm:
+
+2018-09-05 16:38:21,208:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455235
+2018-09-05 16:38:21,208:INFO:lightgbm:
+
+2018-09-05 16:38:21,208:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453086
+2018-09-05 16:38:21,208:INFO:lightgbm:
+
+2018-09-05 16:38:21,208:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451269
+2018-09-05 16:38:21,208:INFO:lightgbm:
+
+2018-09-05 16:38:21,240:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449514
+2018-09-05 16:38:21,240:INFO:lightgbm:
+
+2018-09-05 16:38:21,240:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447961
+2018-09-05 16:38:21,240:INFO:lightgbm:
+
+2018-09-05 16:38:21,240:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446932
+2018-09-05 16:38:21,240:INFO:lightgbm:
+
+2018-09-05 16:38:21,255:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.446001
+2018-09-05 16:38:21,255:INFO:lightgbm:
+
+2018-09-05 16:38:21,255:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.44475
+2018-09-05 16:38:21,255:INFO:lightgbm:
+
+2018-09-05 16:38:21,255:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443635
+2018-09-05 16:38:21,255:INFO:lightgbm:
+
+2018-09-05 16:38:21,255:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,271:INFO:lightgbm:
+
+2018-09-05 16:38:21,271:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,271:INFO:lightgbm: 
+2018-09-05 16:38:21,271:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,271:INFO:lightgbm:
+
+2018-09-05 16:38:21,271:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,271:INFO:lightgbm:
+
+2018-09-05 16:38:21,271:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,271:INFO:lightgbm: 
+2018-09-05 16:38:21,271:INFO:lightgbm:[0, 0, 5, 26, 17, 2, 12, 0, 4, 18, 0, 0, 0, 0, 0, 8, 0, 8, 16, 24, 19, 5, 8, 0]
+2018-09-05 16:38:21,271:INFO:lightgbm:
+
+2018-09-05 16:38:21,271:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,271:INFO:lightgbm:
+
+2018-09-05 16:38:21,271:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.45737
+2018-09-05 16:38:21,271:INFO:lightgbm:
+
+2018-09-05 16:38:21,271:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455249
+2018-09-05 16:38:21,271:INFO:lightgbm:
+
+2018-09-05 16:38:21,271:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453105
+2018-09-05 16:38:21,271:INFO:lightgbm:
+
+2018-09-05 16:38:21,286:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451292
+2018-09-05 16:38:21,286:INFO:lightgbm:
+
+2018-09-05 16:38:21,286:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.44954
+2018-09-05 16:38:21,286:INFO:lightgbm:
+
+2018-09-05 16:38:21,286:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447999
+2018-09-05 16:38:21,286:INFO:lightgbm:
+
+2018-09-05 16:38:21,286:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446971
+2018-09-05 16:38:21,286:INFO:lightgbm:
+
+2018-09-05 16:38:21,286:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.446042
+2018-09-05 16:38:21,286:INFO:lightgbm:
+
+2018-09-05 16:38:21,286:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.4448
+2018-09-05 16:38:21,286:INFO:lightgbm:
+
+2018-09-05 16:38:21,286:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443694
+2018-09-05 16:38:21,286:INFO:lightgbm:
+
+2018-09-05 16:38:21,302:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,302:INFO:lightgbm:
+
+2018-09-05 16:38:21,302:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,302:INFO:lightgbm: 
+2018-09-05 16:38:21,302:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,302:INFO:lightgbm:
+
+2018-09-05 16:38:21,302:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,302:INFO:lightgbm:
+
+2018-09-05 16:38:21,302:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,302:INFO:lightgbm: 
+2018-09-05 16:38:21,302:INFO:lightgbm:[0, 0, 2, 26, 17, 2, 12, 0, 4, 18, 0, 0, 0, 0, 0, 8, 0, 8, 16, 24, 19, 5, 8, 0]
+2018-09-05 16:38:21,302:INFO:lightgbm:
+
+2018-09-05 16:38:21,302:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,302:INFO:lightgbm:
+
+2018-09-05 16:38:21,302:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.45735
+2018-09-05 16:38:21,302:INFO:lightgbm:
+
+2018-09-05 16:38:21,302:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455213
+2018-09-05 16:38:21,302:INFO:lightgbm:
+
+2018-09-05 16:38:21,302:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453055
+2018-09-05 16:38:21,302:INFO:lightgbm:
+
+2018-09-05 16:38:21,318:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451229
+2018-09-05 16:38:21,318:INFO:lightgbm:
+
+2018-09-05 16:38:21,333:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449467
+2018-09-05 16:38:21,333:INFO:lightgbm:
+
+2018-09-05 16:38:21,333:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447907
+2018-09-05 16:38:21,333:INFO:lightgbm:
+
+2018-09-05 16:38:21,333:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446874
+2018-09-05 16:38:21,333:INFO:lightgbm:
+
+2018-09-05 16:38:21,333:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.44594
+2018-09-05 16:38:21,333:INFO:lightgbm:
+
+2018-09-05 16:38:21,333:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444685
+2018-09-05 16:38:21,333:INFO:lightgbm:
+
+2018-09-05 16:38:21,333:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443566
+2018-09-05 16:38:21,333:INFO:lightgbm:
+
+2018-09-05 16:38:21,333:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,333:INFO:lightgbm:
+
+2018-09-05 16:38:21,333:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,333:INFO:lightgbm: 
+2018-09-05 16:38:21,333:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,333:INFO:lightgbm:
+
+2018-09-05 16:38:21,333:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,333:INFO:lightgbm:
+
+2018-09-05 16:38:21,349:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,349:INFO:lightgbm: 
+2018-09-05 16:38:21,349:INFO:lightgbm:[0, 0, 8, 26, 17, 4, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 29, 19, 7, 8, 0]
+2018-09-05 16:38:21,349:INFO:lightgbm:
+
+2018-09-05 16:38:21,349:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,349:INFO:lightgbm:
+
+2018-09-05 16:38:21,349:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457351
+2018-09-05 16:38:21,349:INFO:lightgbm:
+
+2018-09-05 16:38:21,349:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455215
+2018-09-05 16:38:21,349:INFO:lightgbm:
+
+2018-09-05 16:38:21,349:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453057
+2018-09-05 16:38:21,349:INFO:lightgbm:
+
+2018-09-05 16:38:21,349:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451232
+2018-09-05 16:38:21,349:INFO:lightgbm:
+
+2018-09-05 16:38:21,364:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.44947
+2018-09-05 16:38:21,364:INFO:lightgbm:
+
+2018-09-05 16:38:21,364:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.44791
+2018-09-05 16:38:21,364:INFO:lightgbm:
+
+2018-09-05 16:38:21,364:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446878
+2018-09-05 16:38:21,364:INFO:lightgbm:
+
+2018-09-05 16:38:21,364:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445943
+2018-09-05 16:38:21,364:INFO:lightgbm:
+
+2018-09-05 16:38:21,364:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444688
+2018-09-05 16:38:21,364:INFO:lightgbm:
+
+2018-09-05 16:38:21,364:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.44357
+2018-09-05 16:38:21,364:INFO:lightgbm:
+
+2018-09-05 16:38:21,364:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,364:INFO:lightgbm:
+
+2018-09-05 16:38:21,364:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,364:INFO:lightgbm: 
+2018-09-05 16:38:21,364:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,364:INFO:lightgbm:
+
+2018-09-05 16:38:21,364:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,364:INFO:lightgbm:
+
+2018-09-05 16:38:21,380:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,380:INFO:lightgbm: 
+2018-09-05 16:38:21,380:INFO:lightgbm:[0, 0, 8, 26, 17, 4, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 29, 19, 7, 8, 0]
+2018-09-05 16:38:21,380:INFO:lightgbm:
+
+2018-09-05 16:38:21,380:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,380:INFO:lightgbm:
+
+2018-09-05 16:38:21,396:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457359
+2018-09-05 16:38:21,396:INFO:lightgbm:
+
+2018-09-05 16:38:21,396:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.45523
+2018-09-05 16:38:21,396:INFO:lightgbm:
+
+2018-09-05 16:38:21,396:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.45308
+2018-09-05 16:38:21,396:INFO:lightgbm:
+
+2018-09-05 16:38:21,396:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451259
+2018-09-05 16:38:21,396:INFO:lightgbm:
+
+2018-09-05 16:38:21,396:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449502
+2018-09-05 16:38:21,396:INFO:lightgbm:
+
+2018-09-05 16:38:21,411:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447945
+2018-09-05 16:38:21,411:INFO:lightgbm:
+
+2018-09-05 16:38:21,411:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446915
+2018-09-05 16:38:21,411:INFO:lightgbm:
+
+2018-09-05 16:38:21,411:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445982
+2018-09-05 16:38:21,411:INFO:lightgbm:
+
+2018-09-05 16:38:21,411:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444728
+2018-09-05 16:38:21,411:INFO:lightgbm:
+
+2018-09-05 16:38:21,411:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443611
+2018-09-05 16:38:21,411:INFO:lightgbm:
+
+2018-09-05 16:38:21,411:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,411:INFO:lightgbm:
+
+2018-09-05 16:38:21,411:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,411:INFO:lightgbm: 
+2018-09-05 16:38:21,411:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,411:INFO:lightgbm:
+
+2018-09-05 16:38:21,411:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,411:INFO:lightgbm:
+
+2018-09-05 16:38:21,411:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,411:INFO:lightgbm: 
+2018-09-05 16:38:21,411:INFO:lightgbm:[0, 0, 8, 26, 17, 2, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 28, 19, 6, 8, 0]
+2018-09-05 16:38:21,411:INFO:lightgbm:
+
+2018-09-05 16:38:21,411:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,427:INFO:lightgbm:
+
+2018-09-05 16:38:21,427:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457351
+2018-09-05 16:38:21,427:INFO:lightgbm:
+
+2018-09-05 16:38:21,427:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455216
+2018-09-05 16:38:21,427:INFO:lightgbm:
+
+2018-09-05 16:38:21,427:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453058
+2018-09-05 16:38:21,427:INFO:lightgbm:
+
+2018-09-05 16:38:21,427:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451233
+2018-09-05 16:38:21,427:INFO:lightgbm:
+
+2018-09-05 16:38:21,427:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449473
+2018-09-05 16:38:21,427:INFO:lightgbm:
+
+2018-09-05 16:38:21,442:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447913
+2018-09-05 16:38:21,442:INFO:lightgbm:
+
+2018-09-05 16:38:21,458:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.44688
+2018-09-05 16:38:21,458:INFO:lightgbm:
+
+2018-09-05 16:38:21,458:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445946
+2018-09-05 16:38:21,458:INFO:lightgbm:
+
+2018-09-05 16:38:21,458:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444691
+2018-09-05 16:38:21,458:INFO:lightgbm:
+
+2018-09-05 16:38:21,458:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443573
+2018-09-05 16:38:21,458:INFO:lightgbm:
+
+2018-09-05 16:38:21,458:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,458:INFO:lightgbm:
+
+2018-09-05 16:38:21,458:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,458:INFO:lightgbm: 
+2018-09-05 16:38:21,458:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,458:INFO:lightgbm:
+
+2018-09-05 16:38:21,458:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,458:INFO:lightgbm:
+
+2018-09-05 16:38:21,458:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,458:INFO:lightgbm: 
+2018-09-05 16:38:21,458:INFO:lightgbm:[0, 0, 8, 26, 17, 3, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 29, 19, 6, 8, 0]
+2018-09-05 16:38:21,458:INFO:lightgbm:
+
+2018-09-05 16:38:21,458:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,458:INFO:lightgbm:
+
+2018-09-05 16:38:21,474:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457352
+2018-09-05 16:38:21,474:INFO:lightgbm:
+
+2018-09-05 16:38:21,474:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455217
+2018-09-05 16:38:21,474:INFO:lightgbm:
+
+2018-09-05 16:38:21,474:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.45306
+2018-09-05 16:38:21,474:INFO:lightgbm:
+
+2018-09-05 16:38:21,474:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451236
+2018-09-05 16:38:21,474:INFO:lightgbm:
+
+2018-09-05 16:38:21,474:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449476
+2018-09-05 16:38:21,474:INFO:lightgbm:
+
+2018-09-05 16:38:21,474:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447916
+2018-09-05 16:38:21,474:INFO:lightgbm:
+
+2018-09-05 16:38:21,489:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446884
+2018-09-05 16:38:21,489:INFO:lightgbm:
+
+2018-09-05 16:38:21,489:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.44595
+2018-09-05 16:38:21,489:INFO:lightgbm:
+
+2018-09-05 16:38:21,489:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444695
+2018-09-05 16:38:21,489:INFO:lightgbm:
+
+2018-09-05 16:38:21,489:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443577
+2018-09-05 16:38:21,489:INFO:lightgbm:
+
+2018-09-05 16:38:21,489:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,489:INFO:lightgbm:
+
+2018-09-05 16:38:21,489:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,489:INFO:lightgbm: 
+2018-09-05 16:38:21,489:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,489:INFO:lightgbm:
+
+2018-09-05 16:38:21,489:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,489:INFO:lightgbm:
+
+2018-09-05 16:38:21,489:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,489:INFO:lightgbm: 
+2018-09-05 16:38:21,489:INFO:lightgbm:[0, 0, 8, 26, 17, 3, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 29, 19, 6, 8, 0]
+2018-09-05 16:38:21,489:INFO:lightgbm:
+
+2018-09-05 16:38:21,489:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,489:INFO:lightgbm:
+
+2018-09-05 16:38:21,505:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.45736
+2018-09-05 16:38:21,505:INFO:lightgbm:
+
+2018-09-05 16:38:21,520:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.45523
+2018-09-05 16:38:21,520:INFO:lightgbm:
+
+2018-09-05 16:38:21,520:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453079
+2018-09-05 16:38:21,520:INFO:lightgbm:
+
+2018-09-05 16:38:21,520:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.45126
+2018-09-05 16:38:21,520:INFO:lightgbm:
+
+2018-09-05 16:38:21,520:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449501
+2018-09-05 16:38:21,520:INFO:lightgbm:
+
+2018-09-05 16:38:21,520:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447946
+2018-09-05 16:38:21,520:INFO:lightgbm:
+
+2018-09-05 16:38:21,520:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446916
+2018-09-05 16:38:21,520:INFO:lightgbm:
+
+2018-09-05 16:38:21,520:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445983
+2018-09-05 16:38:21,520:INFO:lightgbm:
+
+2018-09-05 16:38:21,536:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.44473
+2018-09-05 16:38:21,536:INFO:lightgbm:
+
+2018-09-05 16:38:21,536:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443613
+2018-09-05 16:38:21,536:INFO:lightgbm:
+
+2018-09-05 16:38:21,536:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,536:INFO:lightgbm:
+
+2018-09-05 16:38:21,536:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,536:INFO:lightgbm: 
+2018-09-05 16:38:21,536:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,536:INFO:lightgbm:
+
+2018-09-05 16:38:21,536:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,536:INFO:lightgbm:
+
+2018-09-05 16:38:21,536:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,536:INFO:lightgbm: 
+2018-09-05 16:38:21,536:INFO:lightgbm:[0, 0, 5, 26, 17, 2, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 27, 19, 6, 8, 0]
+2018-09-05 16:38:21,536:INFO:lightgbm:
+
+2018-09-05 16:38:21,536:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,536:INFO:lightgbm:
+
+2018-09-05 16:38:21,552:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457361
+2018-09-05 16:38:21,552:INFO:lightgbm:
+
+2018-09-05 16:38:21,552:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455234
+2018-09-05 16:38:21,552:INFO:lightgbm:
+
+2018-09-05 16:38:21,552:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453084
+2018-09-05 16:38:21,552:INFO:lightgbm:
+
+2018-09-05 16:38:21,552:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451267
+2018-09-05 16:38:21,552:INFO:lightgbm:
+
+2018-09-05 16:38:21,552:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449511
+2018-09-05 16:38:21,552:INFO:lightgbm:
+
+2018-09-05 16:38:21,552:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447958
+2018-09-05 16:38:21,552:INFO:lightgbm:
+
+2018-09-05 16:38:21,552:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446928
+2018-09-05 16:38:21,552:INFO:lightgbm:
+
+2018-09-05 16:38:21,567:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445997
+2018-09-05 16:38:21,567:INFO:lightgbm:
+
+2018-09-05 16:38:21,583:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444747
+2018-09-05 16:38:21,583:INFO:lightgbm:
+
+2018-09-05 16:38:21,583:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443632
+2018-09-05 16:38:21,583:INFO:lightgbm:
+
+2018-09-05 16:38:21,583:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,583:INFO:lightgbm:
+
+2018-09-05 16:38:21,583:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,583:INFO:lightgbm: 
+2018-09-05 16:38:21,583:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,583:INFO:lightgbm:
+
+2018-09-05 16:38:21,583:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,583:INFO:lightgbm:
+
+2018-09-05 16:38:21,583:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,583:INFO:lightgbm: 
+2018-09-05 16:38:21,583:INFO:lightgbm:[0, 0, 5, 26, 17, 2, 12, 0, 4, 19, 0, 0, 0, 0, 0, 8, 0, 8, 16, 24, 19, 5, 8, 0]
+2018-09-05 16:38:21,583:INFO:lightgbm:
+
+2018-09-05 16:38:21,583:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,583:INFO:lightgbm:
+
+2018-09-05 16:38:21,583:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457362
+2018-09-05 16:38:21,583:INFO:lightgbm:
+
+2018-09-05 16:38:21,598:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455235
+2018-09-05 16:38:21,598:INFO:lightgbm:
+
+2018-09-05 16:38:21,598:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453086
+2018-09-05 16:38:21,598:INFO:lightgbm:
+
+2018-09-05 16:38:21,598:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451269
+2018-09-05 16:38:21,598:INFO:lightgbm:
+
+2018-09-05 16:38:21,598:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449514
+2018-09-05 16:38:21,598:INFO:lightgbm:
+
+2018-09-05 16:38:21,598:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447961
+2018-09-05 16:38:21,598:INFO:lightgbm:
+
+2018-09-05 16:38:21,598:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446932
+2018-09-05 16:38:21,598:INFO:lightgbm:
+
+2018-09-05 16:38:21,598:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.446001
+2018-09-05 16:38:21,598:INFO:lightgbm:
+
+2018-09-05 16:38:21,614:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.44475
+2018-09-05 16:38:21,614:INFO:lightgbm:
+
+2018-09-05 16:38:21,614:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443635
+2018-09-05 16:38:21,614:INFO:lightgbm:
+
+2018-09-05 16:38:21,614:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,614:INFO:lightgbm:
+
+2018-09-05 16:38:21,614:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,614:INFO:lightgbm: 
+2018-09-05 16:38:21,614:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,614:INFO:lightgbm:
+
+2018-09-05 16:38:21,614:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,614:INFO:lightgbm:
+
+2018-09-05 16:38:21,614:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,614:INFO:lightgbm: 
+2018-09-05 16:38:21,614:INFO:lightgbm:[0, 0, 5, 26, 17, 2, 12, 0, 4, 18, 0, 0, 0, 0, 0, 8, 0, 8, 16, 24, 19, 5, 8, 0]
+2018-09-05 16:38:21,614:INFO:lightgbm:
+
+2018-09-05 16:38:21,614:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,614:INFO:lightgbm:
+
+2018-09-05 16:38:21,614:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.45737
+2018-09-05 16:38:21,614:INFO:lightgbm:
+
+2018-09-05 16:38:21,630:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455249
+2018-09-05 16:38:21,630:INFO:lightgbm:
+
+2018-09-05 16:38:21,645:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453105
+2018-09-05 16:38:21,645:INFO:lightgbm:
+
+2018-09-05 16:38:21,645:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451292
+2018-09-05 16:38:21,645:INFO:lightgbm:
+
+2018-09-05 16:38:21,645:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.44954
+2018-09-05 16:38:21,645:INFO:lightgbm:
+
+2018-09-05 16:38:21,645:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447999
+2018-09-05 16:38:21,645:INFO:lightgbm:
+
+2018-09-05 16:38:21,645:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446971
+2018-09-05 16:38:21,645:INFO:lightgbm:
+
+2018-09-05 16:38:21,645:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.446042
+2018-09-05 16:38:21,645:INFO:lightgbm:
+
+2018-09-05 16:38:21,661:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.4448
+2018-09-05 16:38:21,661:INFO:lightgbm:
+
+2018-09-05 16:38:21,661:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443694
+2018-09-05 16:38:21,661:INFO:lightgbm:
+
+2018-09-05 16:38:21,661:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,661:INFO:lightgbm:
+
+2018-09-05 16:38:21,661:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,661:INFO:lightgbm: 
+2018-09-05 16:38:21,661:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,661:INFO:lightgbm:
+
+2018-09-05 16:38:21,661:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,661:INFO:lightgbm:
+
+2018-09-05 16:38:21,661:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,661:INFO:lightgbm: 
+2018-09-05 16:38:21,661:INFO:lightgbm:[0, 0, 2, 26, 17, 2, 12, 0, 4, 18, 0, 0, 0, 0, 0, 8, 0, 8, 16, 24, 19, 5, 8, 0]
+2018-09-05 16:38:21,661:INFO:lightgbm:
+
+2018-09-05 16:38:21,661:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,661:INFO:lightgbm:
+
+2018-09-05 16:38:21,676:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.45735
+2018-09-05 16:38:21,676:INFO:lightgbm:
+
+2018-09-05 16:38:21,676:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455213
+2018-09-05 16:38:21,676:INFO:lightgbm:
+
+2018-09-05 16:38:21,676:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453055
+2018-09-05 16:38:21,676:INFO:lightgbm:
+
+2018-09-05 16:38:21,676:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451229
+2018-09-05 16:38:21,676:INFO:lightgbm:
+
+2018-09-05 16:38:21,676:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449467
+2018-09-05 16:38:21,676:INFO:lightgbm:
+
+2018-09-05 16:38:21,676:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447907
+2018-09-05 16:38:21,676:INFO:lightgbm:
+
+2018-09-05 16:38:21,676:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446874
+2018-09-05 16:38:21,676:INFO:lightgbm:
+
+2018-09-05 16:38:21,708:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.44594
+2018-09-05 16:38:21,708:INFO:lightgbm:
+
+2018-09-05 16:38:21,739:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444685
+2018-09-05 16:38:21,739:INFO:lightgbm:
+
+2018-09-05 16:38:21,754:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443566
+2018-09-05 16:38:21,754:INFO:lightgbm:
+
+2018-09-05 16:38:21,754:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,754:INFO:lightgbm:
+
+2018-09-05 16:38:21,754:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,754:INFO:lightgbm: 
+2018-09-05 16:38:21,754:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,754:INFO:lightgbm:
+
+2018-09-05 16:38:21,754:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,754:INFO:lightgbm:
+
+2018-09-05 16:38:21,754:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,754:INFO:lightgbm: 
+2018-09-05 16:38:21,754:INFO:lightgbm:[0, 0, 8, 26, 17, 4, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 29, 19, 7, 8, 0]
+2018-09-05 16:38:21,754:INFO:lightgbm:
+
+2018-09-05 16:38:21,754:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,754:INFO:lightgbm:
+
+2018-09-05 16:38:21,754:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457351
+2018-09-05 16:38:21,754:INFO:lightgbm:
+
+2018-09-05 16:38:21,770:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455215
+2018-09-05 16:38:21,770:INFO:lightgbm:
+
+2018-09-05 16:38:21,770:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453057
+2018-09-05 16:38:21,770:INFO:lightgbm:
+
+2018-09-05 16:38:21,770:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451232
+2018-09-05 16:38:21,770:INFO:lightgbm:
+
+2018-09-05 16:38:21,770:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.44947
+2018-09-05 16:38:21,770:INFO:lightgbm:
+
+2018-09-05 16:38:21,770:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.44791
+2018-09-05 16:38:21,770:INFO:lightgbm:
+
+2018-09-05 16:38:21,771:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446878
+2018-09-05 16:38:21,771:INFO:lightgbm:
+
+2018-09-05 16:38:21,771:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445943
+2018-09-05 16:38:21,771:INFO:lightgbm:
+
+2018-09-05 16:38:21,771:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444688
+2018-09-05 16:38:21,771:INFO:lightgbm:
+
+2018-09-05 16:38:21,771:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.44357
+2018-09-05 16:38:21,771:INFO:lightgbm:
+
+2018-09-05 16:38:21,771:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,771:INFO:lightgbm:
+
+2018-09-05 16:38:21,771:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,771:INFO:lightgbm: 
+2018-09-05 16:38:21,771:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,771:INFO:lightgbm:
+
+2018-09-05 16:38:21,771:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,771:INFO:lightgbm:
+
+2018-09-05 16:38:21,771:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,771:INFO:lightgbm: 
+2018-09-05 16:38:21,771:INFO:lightgbm:[0, 0, 8, 26, 17, 4, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 29, 19, 7, 8, 0]
+2018-09-05 16:38:21,771:INFO:lightgbm:
+
+2018-09-05 16:38:21,771:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,771:INFO:lightgbm:
+
+2018-09-05 16:38:21,802:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457359
+2018-09-05 16:38:21,802:INFO:lightgbm:
+
+2018-09-05 16:38:21,802:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.45523
+2018-09-05 16:38:21,802:INFO:lightgbm:
+
+2018-09-05 16:38:21,802:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.45308
+2018-09-05 16:38:21,802:INFO:lightgbm:
+
+2018-09-05 16:38:21,802:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451259
+2018-09-05 16:38:21,802:INFO:lightgbm:
+
+2018-09-05 16:38:21,802:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449502
+2018-09-05 16:38:21,802:INFO:lightgbm:
+
+2018-09-05 16:38:21,802:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447945
+2018-09-05 16:38:21,802:INFO:lightgbm:
+
+2018-09-05 16:38:21,802:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446915
+2018-09-05 16:38:21,802:INFO:lightgbm:
+
+2018-09-05 16:38:21,818:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445982
+2018-09-05 16:38:21,818:INFO:lightgbm:
+
+2018-09-05 16:38:21,818:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444728
+2018-09-05 16:38:21,818:INFO:lightgbm:
+
+2018-09-05 16:38:21,818:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443611
+2018-09-05 16:38:21,818:INFO:lightgbm:
+
+2018-09-05 16:38:21,818:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,818:INFO:lightgbm:
+
+2018-09-05 16:38:21,818:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,818:INFO:lightgbm: 
+2018-09-05 16:38:21,818:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,818:INFO:lightgbm:
+
+2018-09-05 16:38:21,818:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,818:INFO:lightgbm:
+
+2018-09-05 16:38:21,818:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,818:INFO:lightgbm: 
+2018-09-05 16:38:21,818:INFO:lightgbm:[0, 0, 8, 26, 17, 2, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 28, 19, 6, 8, 0]
+2018-09-05 16:38:21,818:INFO:lightgbm:
+
+2018-09-05 16:38:21,818:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,818:INFO:lightgbm:
+
+2018-09-05 16:38:21,849:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457351
+2018-09-05 16:38:21,849:INFO:lightgbm:
+
+2018-09-05 16:38:21,849:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455216
+2018-09-05 16:38:21,849:INFO:lightgbm:
+
+2018-09-05 16:38:21,849:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453058
+2018-09-05 16:38:21,849:INFO:lightgbm:
+
+2018-09-05 16:38:21,849:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451233
+2018-09-05 16:38:21,849:INFO:lightgbm:
+
+2018-09-05 16:38:21,865:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449473
+2018-09-05 16:38:21,865:INFO:lightgbm:
+
+2018-09-05 16:38:21,865:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447913
+2018-09-05 16:38:21,865:INFO:lightgbm:
+
+2018-09-05 16:38:21,865:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.44688
+2018-09-05 16:38:21,865:INFO:lightgbm:
+
+2018-09-05 16:38:21,865:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445946
+2018-09-05 16:38:21,865:INFO:lightgbm:
+
+2018-09-05 16:38:21,865:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444691
+2018-09-05 16:38:21,865:INFO:lightgbm:
+
+2018-09-05 16:38:21,865:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443573
+2018-09-05 16:38:21,865:INFO:lightgbm:
+
+2018-09-05 16:38:21,865:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,865:INFO:lightgbm:
+
+2018-09-05 16:38:21,865:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,865:INFO:lightgbm: 
+2018-09-05 16:38:21,865:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,865:INFO:lightgbm:
+
+2018-09-05 16:38:21,865:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,865:INFO:lightgbm:
+
+2018-09-05 16:38:21,865:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,865:INFO:lightgbm: 
+2018-09-05 16:38:21,865:INFO:lightgbm:[0, 0, 8, 26, 17, 3, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 29, 19, 6, 8, 0]
+2018-09-05 16:38:21,865:INFO:lightgbm:
+
+2018-09-05 16:38:21,865:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,865:INFO:lightgbm:
+
+2018-09-05 16:38:21,880:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457352
+2018-09-05 16:38:21,880:INFO:lightgbm:
+
+2018-09-05 16:38:21,880:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455217
+2018-09-05 16:38:21,880:INFO:lightgbm:
+
+2018-09-05 16:38:21,880:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.45306
+2018-09-05 16:38:21,880:INFO:lightgbm:
+
+2018-09-05 16:38:21,880:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451236
+2018-09-05 16:38:21,880:INFO:lightgbm:
+
+2018-09-05 16:38:21,880:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449476
+2018-09-05 16:38:21,880:INFO:lightgbm:
+
+2018-09-05 16:38:21,880:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447916
+2018-09-05 16:38:21,880:INFO:lightgbm:
+
+2018-09-05 16:38:21,880:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446884
+2018-09-05 16:38:21,880:INFO:lightgbm:
+
+2018-09-05 16:38:21,880:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.44595
+2018-09-05 16:38:21,880:INFO:lightgbm:
+
+2018-09-05 16:38:21,880:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444695
+2018-09-05 16:38:21,880:INFO:lightgbm:
+
+2018-09-05 16:38:21,880:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443577
+2018-09-05 16:38:21,880:INFO:lightgbm:
+
+2018-09-05 16:38:21,880:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,896:INFO:lightgbm:
+
+2018-09-05 16:38:21,896:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,896:INFO:lightgbm: 
+2018-09-05 16:38:21,896:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,896:INFO:lightgbm:
+
+2018-09-05 16:38:21,896:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,896:INFO:lightgbm:
+
+2018-09-05 16:38:21,896:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,896:INFO:lightgbm: 
+2018-09-05 16:38:21,896:INFO:lightgbm:[0, 0, 8, 26, 17, 3, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 29, 19, 6, 8, 0]
+2018-09-05 16:38:21,896:INFO:lightgbm:
+
+2018-09-05 16:38:21,896:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,896:INFO:lightgbm:
+
+2018-09-05 16:38:21,896:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.45736
+2018-09-05 16:38:21,896:INFO:lightgbm:
+
+2018-09-05 16:38:21,896:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.45523
+2018-09-05 16:38:21,896:INFO:lightgbm:
+
+2018-09-05 16:38:21,896:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453079
+2018-09-05 16:38:21,911:INFO:lightgbm:
+
+2018-09-05 16:38:21,911:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.45126
+2018-09-05 16:38:21,911:INFO:lightgbm:
+
+2018-09-05 16:38:21,911:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449501
+2018-09-05 16:38:21,911:INFO:lightgbm:
+
+2018-09-05 16:38:21,911:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447946
+2018-09-05 16:38:21,911:INFO:lightgbm:
+
+2018-09-05 16:38:21,911:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446916
+2018-09-05 16:38:21,911:INFO:lightgbm:
+
+2018-09-05 16:38:21,911:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445983
+2018-09-05 16:38:21,911:INFO:lightgbm:
+
+2018-09-05 16:38:21,911:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.44473
+2018-09-05 16:38:21,911:INFO:lightgbm:
+
+2018-09-05 16:38:21,911:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443613
+2018-09-05 16:38:21,911:INFO:lightgbm:
+
+2018-09-05 16:38:21,927:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,927:INFO:lightgbm:
+
+2018-09-05 16:38:21,927:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,927:INFO:lightgbm: 
+2018-09-05 16:38:21,927:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,927:INFO:lightgbm:
+
+2018-09-05 16:38:21,927:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,927:INFO:lightgbm:
+
+2018-09-05 16:38:21,927:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,927:INFO:lightgbm: 
+2018-09-05 16:38:21,927:INFO:lightgbm:[0, 0, 5, 26, 17, 2, 12, 0, 4, 22, 0, 0, 0, 0, 0, 8, 0, 8, 16, 27, 19, 6, 8, 0]
+2018-09-05 16:38:21,927:INFO:lightgbm:
+
+2018-09-05 16:38:21,927:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,927:INFO:lightgbm:
+
+2018-09-05 16:38:21,927:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457361
+2018-09-05 16:38:21,927:INFO:lightgbm:
+
+2018-09-05 16:38:21,927:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455234
+2018-09-05 16:38:21,927:INFO:lightgbm:
+
+2018-09-05 16:38:21,927:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453084
+2018-09-05 16:38:21,927:INFO:lightgbm:
+
+2018-09-05 16:38:21,927:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451267
+2018-09-05 16:38:21,927:INFO:lightgbm:
+
+2018-09-05 16:38:21,927:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449511
+2018-09-05 16:38:21,927:INFO:lightgbm:
+
+2018-09-05 16:38:21,927:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447958
+2018-09-05 16:38:21,927:INFO:lightgbm:
+
+2018-09-05 16:38:21,927:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446928
+2018-09-05 16:38:21,927:INFO:lightgbm:
+
+2018-09-05 16:38:21,943:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.445997
+2018-09-05 16:38:21,943:INFO:lightgbm:
+
+2018-09-05 16:38:21,943:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.444747
+2018-09-05 16:38:21,943:INFO:lightgbm:
+
+2018-09-05 16:38:21,943:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443632
+2018-09-05 16:38:21,943:INFO:lightgbm:
+
+2018-09-05 16:38:21,943:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,943:INFO:lightgbm:
+
+2018-09-05 16:38:21,943:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,943:INFO:lightgbm: 
+2018-09-05 16:38:21,943:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,943:INFO:lightgbm:
+
+2018-09-05 16:38:21,943:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,943:INFO:lightgbm:
+
+2018-09-05 16:38:21,943:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,943:INFO:lightgbm: 
+2018-09-05 16:38:21,943:INFO:lightgbm:[0, 0, 5, 26, 17, 2, 12, 0, 4, 19, 0, 0, 0, 0, 0, 8, 0, 8, 16, 24, 19, 5, 8, 0]
+2018-09-05 16:38:21,943:INFO:lightgbm:
+
+2018-09-05 16:38:21,943:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,943:INFO:lightgbm:
+
+2018-09-05 16:38:21,943:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.457362
+2018-09-05 16:38:21,943:INFO:lightgbm:
+
+2018-09-05 16:38:21,943:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455235
+2018-09-05 16:38:21,943:INFO:lightgbm:
+
+2018-09-05 16:38:21,943:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453086
+2018-09-05 16:38:21,943:INFO:lightgbm:
+
+2018-09-05 16:38:21,943:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451269
+2018-09-05 16:38:21,943:INFO:lightgbm:
+
+2018-09-05 16:38:21,958:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.449514
+2018-09-05 16:38:21,958:INFO:lightgbm:
+
+2018-09-05 16:38:21,958:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447961
+2018-09-05 16:38:21,958:INFO:lightgbm:
+
+2018-09-05 16:38:21,958:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446932
+2018-09-05 16:38:21,958:INFO:lightgbm:
+
+2018-09-05 16:38:21,958:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.446001
+2018-09-05 16:38:21,958:INFO:lightgbm:
+
+2018-09-05 16:38:21,958:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.44475
+2018-09-05 16:38:21,958:INFO:lightgbm:
+
+2018-09-05 16:38:21,958:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443635
+2018-09-05 16:38:21,958:INFO:lightgbm:
+
+2018-09-05 16:38:21,958:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:21,958:INFO:lightgbm:
+
+2018-09-05 16:38:21,958:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:21,958:INFO:lightgbm: 
+2018-09-05 16:38:21,958:INFO:lightgbm:'site_category'
+2018-09-05 16:38:21,958:INFO:lightgbm:
+
+2018-09-05 16:38:21,958:INFO:lightgbm:save model to file...
+2018-09-05 16:38:21,958:INFO:lightgbm:
+
+2018-09-05 16:38:21,958:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:21,958:INFO:lightgbm: 
+2018-09-05 16:38:21,958:INFO:lightgbm:[0, 0, 5, 26, 17, 2, 12, 0, 4, 18, 0, 0, 0, 0, 0, 8, 0, 8, 16, 24, 19, 5, 8, 0]
+2018-09-05 16:38:21,958:INFO:lightgbm:
+
+2018-09-05 16:38:21,958:INFO:lightgbm:Start training...
+2018-09-05 16:38:21,958:INFO:lightgbm:
+
+2018-09-05 16:38:21,958:INFO:lightgbm:[1]	valid_0's binary_logloss: 0.45737
+2018-09-05 16:38:21,958:INFO:lightgbm:
+
+2018-09-05 16:38:22,005:INFO:lightgbm:[2]	valid_0's binary_logloss: 0.455249
+2018-09-05 16:38:22,005:INFO:lightgbm:
+
+2018-09-05 16:38:22,005:INFO:lightgbm:[3]	valid_0's binary_logloss: 0.453105
+2018-09-05 16:38:22,005:INFO:lightgbm:
+
+2018-09-05 16:38:22,005:INFO:lightgbm:[4]	valid_0's binary_logloss: 0.451292
+2018-09-05 16:38:22,005:INFO:lightgbm:
+
+2018-09-05 16:38:22,005:INFO:lightgbm:[5]	valid_0's binary_logloss: 0.44954
+2018-09-05 16:38:22,005:INFO:lightgbm:
+
+2018-09-05 16:38:22,005:INFO:lightgbm:[6]	valid_0's binary_logloss: 0.447999
+2018-09-05 16:38:22,005:INFO:lightgbm:
+
+2018-09-05 16:38:22,005:INFO:lightgbm:[7]	valid_0's binary_logloss: 0.446971
+2018-09-05 16:38:22,005:INFO:lightgbm:
+
+2018-09-05 16:38:22,005:INFO:lightgbm:[8]	valid_0's binary_logloss: 0.446042
+2018-09-05 16:38:22,005:INFO:lightgbm:
+
+2018-09-05 16:38:22,005:INFO:lightgbm:[9]	valid_0's binary_logloss: 0.4448
+2018-09-05 16:38:22,005:INFO:lightgbm:
+
+2018-09-05 16:38:22,020:INFO:lightgbm:[10]	valid_0's binary_logloss: 0.443694
+2018-09-05 16:38:22,020:INFO:lightgbm:
+
+2018-09-05 16:38:22,020:INFO:lightgbm:Finish first 10 rounds...
+2018-09-05 16:38:22,020:INFO:lightgbm:
+
+2018-09-05 16:38:22,020:INFO:lightgbm:7th feature name is:
+2018-09-05 16:38:22,020:INFO:lightgbm: 
+2018-09-05 16:38:22,020:INFO:lightgbm:'site_category'
+2018-09-05 16:38:22,020:INFO:lightgbm:
+
+2018-09-05 16:38:22,020:INFO:lightgbm:save model to file...
+2018-09-05 16:38:22,020:INFO:lightgbm:
+
+2018-09-05 16:38:22,020:INFO:lightgbm:Feature importances:
+2018-09-05 16:38:22,020:INFO:lightgbm: 
+2018-09-05 16:38:22,020:INFO:lightgbm:[0, 0, 2, 26, 17, 2, 12, 0, 4, 18, 0, 0, 0, 0, 0, 8, 0, 8, 16, 24, 19, 5, 8, 0]
+2018-09-05 16:38:22,020:INFO:lightgbm:
+
