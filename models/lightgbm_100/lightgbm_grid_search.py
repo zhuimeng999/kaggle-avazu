@@ -11,7 +11,7 @@ import logging
 try:
     from .my_model import MyModel
 except ImportError:
-    from models.lightgbm.my_model import MyModel
+    from models.lightgbm_100.my_model import MyModel
 
 logger = logging.getLogger('lightgbm grid search')
 
