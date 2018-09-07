@@ -1,5 +1,6 @@
 import tensorflow as tf
 
+
 def my_model(features, labels, mode, params):
     alpha = params['alpha']
     if alpha > 0:
@@ -8,22 +9,25 @@ def my_model(features, labels, mode, params):
         regularizer = None
     
     lr_list = []
-    fm_list = []
     with tf.variable_scope('input_layer'):
         for k, v in features.items():
             embedding_table = tf.get_variable(k + '_embed_lr', [params['feature_dim'][k], params['hidden_fields']], 
-                                              initializer=tf.truncated_normal_initializer(tf.sqrt(2/66)), regularizer=regularizer)
+                                              initializer=tf.truncated_normal_initializer(tf.sqrt(2/66)))
             embedded_var = tf.nn.embedding_lookup(embedding_table, v)
             lr_list.append(embedded_var)
         
-    lr_matrix = tf.concat(lr_list, axis = 1)
+    lr_matrix = tf.concat(lr_list, axis=1)
 
     with tf.variable_scope('dnn_layer'):
-        net = lr_matrix
-        for _ in range(params['num_layer']):
+        net = params['activation'](lr_matrix)
+        if (params.get('keep_prob', 1.0)) < 1.0 and (mode == tf.estimator.ModeKeys.TRAIN):
+            net = tf.nn.dropout(net, params['keep_prob'])
+        for _ in range(params['num_layer'] - 1):
             net = tf.layers.dense(net, units=params['hidden_fields'], activation=params['activation'],
                                      kernel_initializer=tf.truncated_normal_initializer(stddev=tf.sqrt(2/66)),
                                      kernel_regularizer=regularizer, bias_regularizer=regularizer)
+            if (params.get('keep_prob', 1.0)) < 1.0 and (mode == tf.estimator.ModeKeys.TRAIN):
+                net = tf.nn.dropout(net, params['keep_prob'])
 
     logits = tf.reduce_sum(net, axis=1)
     # Compute predictions.
@@ -58,7 +62,6 @@ def my_model(features, labels, mode, params):
     optimizer = tf.train.AdamOptimizer(learning_rate=learn_rate)
     adam_op = optimizer.minimize(loss, global_step=tf.train.get_global_step())
 
-
     optimizer = tf.train.GradientDescentOptimizer(learning_rate=learn_rate)
     sgd_op = optimizer.minimize(loss, global_step=tf.train.get_global_step())
 
@@ -69,9 +72,9 @@ def my_model(features, labels, mode, params):
 
     return tf.estimator.EstimatorSpec(mode, loss=loss, train_op=train_op)
 
+
 class MyModel(tf.estimator.Estimator):
     def __init__(self, model_dir=None, config=None, params=None,
                  warm_start_from=None):
         super().__init__(my_model, model_dir=model_dir, config=config, params=params,
                          warm_start_from=warm_start_from)
-        

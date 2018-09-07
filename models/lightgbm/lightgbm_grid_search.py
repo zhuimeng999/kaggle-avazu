@@ -8,10 +8,7 @@ import json
 
 from advisor_client.client import AdvisorClient
 import logging
-try:
-    from .my_model import MyModel
-except ImportError:
-    from models.lightgbm.my_model import MyModel
+from models.lightgbm.my_model import MyModel
 
 logger = logging.getLogger('lightgbm grid search')
 
@@ -90,9 +87,9 @@ def main():
             },
         ]
     }
-    study = client.create_study("lightgbm_search", study_configuration,
-                              "BayesianOptimization")
-    #study = client.get_study_by_id(21)
+    # study = client.create_study("lightgbm_search", study_configuration,
+    #                           "BayesianOptimization")
+    study = client.get_study_by_id(44)
 
     # Get suggested trials
 
@@ -104,7 +101,7 @@ def main():
     #     metric = model.train(**parameter_value_dict)
     #     client.complete_trial_with_one_metric(trial, metric)
 
-    for i in range(10):
+    for i in range(30):
         # Get suggested trials
         trials = client.get_suggestions(study.id, 1)
 

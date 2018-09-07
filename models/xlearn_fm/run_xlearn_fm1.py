@@ -25,8 +25,8 @@ if __name__ == '__main__':
     cmd = cmd + '-s 1 '
     cmd = cmd + '-p adagrad' + ' '# ftrl sgd adagrad
     cmd = cmd + '-r 0.02' + ' '
-    cmd = cmd + '-b 0.01 '
-    cmd = cmd + '-e 200' + ' '
+    cmd = cmd + '-b 0.001 '
+    cmd = cmd + '-e 100' + ' '
     cmd = cmd + '-sw 10 '
     print(cmd)
     os.system(cmd)

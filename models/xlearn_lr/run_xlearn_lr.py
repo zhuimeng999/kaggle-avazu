@@ -22,11 +22,9 @@ if __name__ == '__main__':
     cmd = cmd + data_train + ' '
     cmd = cmd + '-v ' + data_valid + ' '
     cmd = cmd + '-m ' + model_path + ' '
-    cmd = cmd + '-s 1 '
-    cmd = cmd + '-p adagrad' + ' '# ftrl sgd adagrad
-    cmd = cmd + '-r 0.02' + ' '
-    cmd = cmd + '-b 0.01 '
-    cmd = cmd + '-e 200' + ' '
-    cmd = cmd + '-sw 10 '
+    cmd = cmd + '-s 0 '
+    cmd = cmd + '-p ftrl -alpha 0.002 -beta 0.8 -lambda_1 0.001 -lambda_2 1.0' + ' '# ftrl sgd adagrad
+    cmd = cmd + '-r 0.002' + ' '
+    cmd = cmd + '-e 100' + ' '
     print(cmd)
     os.system(cmd)

@@ -15,16 +15,28 @@
 """Prepare MovieLens dataset for wide-deep."""
 
 import tensorflow as tf
+import os
+import pickle
+
+
+def get_feature_dim(thresh_hold):
+    curr_dir = os.path.abspath(os.path.dirname(__file__))
+    feature_dim_path = os.path.join(curr_dir, 'feature_dim_' + str(thresh_hold) + '.pickle')
+    with open(feature_dim_path, 'rb') as f:
+        feature_dim_dict = pickle.load(f)
+    return feature_dim_dict
+
 
 def get_input_fn(train_path, batch_size, repeat, shuffle):
     with open(train_path, 'r') as f:
         column_names = f.readline().strip().split(',')
     _CSV_COLUMN_DEFAULTS = [[0]]*(len(column_names) - 1)
+
     def parse_csv(value):
         columns = tf.decode_csv(value, record_defaults=_CSV_COLUMN_DEFAULTS, 
                                 select_cols=list(range(len(column_names)))[1:])
         features = dict(zip(column_names[1:], columns))
-        #features.pop('id')
+        # features.pop('id')
     
         labels = features.pop('click')
         return features, labels
@@ -46,3 +58,29 @@ def get_input_fn(train_path, batch_size, repeat, shuffle):
         return dataset.prefetch(2)
 
     return csv_input_fn
+
+
+def write_to_file(thresh_hold):
+    curr_dir = os.path.abspath(os.path.dirname(__file__))
+    reversed_map_path = os.path.join(curr_dir, '../../preprocess/info/reversed_map_' + str(thresh_hold) + '.pickle')
+    with open(reversed_map_path, 'rb') as f:
+        reversed_map_dict = pickle.load(f)
+
+    feature_dim_dict = { k: len(v) for k, v in reversed_map_dict.items()}
+    feature_dim_dict['hour'] = 24
+    feature_dim_dict['weekday'] = 7
+    assert len(feature_dim_dict) == 23
+
+    feature_dim_path = os.path.join(curr_dir, 'feature_dim_' + str(thresh_hold) + '.pickle')
+    with open(feature_dim_path, 'wb') as f:
+        pickle.dump(feature_dim_dict, f, pickle.HIGHEST_PROTOCOL)
+
+
+def main(_):
+    write_to_file(0)
+    write_to_file(100)
+
+
+if __name__ == '__main__':
+    tf.logging.set_verbosity(tf.logging.INFO)
+    tf.app.run()

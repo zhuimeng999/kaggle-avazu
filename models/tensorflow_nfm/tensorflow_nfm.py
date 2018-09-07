@@ -8,17 +8,44 @@ def my_model(features, labels, mode, params):
         regularizer = None
     
     lr_list = []
+    fm_list = []
     with tf.variable_scope('input_layer'):
         for k, v in features.items():
             embedding_table = tf.get_variable(k + '_embed_lr', [params['feature_dim'][k], 1], 
-                                              initializer=tf.truncated_normal_initializer(tf.sqrt(2/66)), regularizer=regularizer)
+                                              initializer=tf.truncated_normal_initializer(tf.sqrt(2/66)))
             embedded_var = tf.nn.embedding_lookup(embedding_table, v)
             lr_list.append(embedded_var)
             
+        for k, v in features.items():
+            embedding_table = tf.get_variable(k + '_embed_fm', [params['feature_columns'][k], params['hidden_fields']], 
+                                              initializer=tf.truncated_normal_initializer(tf.sqrt(2/66)))
+            embedded_var = tf.nn.embedding_lookup(embedding_table, v)
+            fm_list.append(embedded_var)
+            
         lr_bias = tf.get_variable('lr_bias', shape=(), dtype=tf.float32, 
                                   initializer=tf.truncated_normal_initializer(tf.sqrt(2/66)), regularizer=regularizer)
-    lr_matrix = tf.concat(lr_list, axis = 1)
-    logits = tf.reduce_sum(lr_matrix, axis=1) + lr_bias
+        
+    # lr_matrix = tf.stack(lr_list, axis = 1)
+    
+    fm_matrix = tf.stack(fm_list, axis = 1)
+    
+    sum_squre = tf.reduce_sum(fm_matrix, axis=1)
+    sum_squre = tf.square(sum_squre)
+    
+    squre_sum = tf.square(fm_matrix)
+    squre_sum = tf.reduce_sum(squre_sum, axis=1)
+    
+    nfm_input = sum_squre - squre_sum
+    with tf.variable_scope('nfm_layer'):
+        net = nfm_input
+        for _ in range(params['num_layer']):
+            net = tf.layers.dense(net, units=params['hidden_fields'], activation=params['activation'],
+                                     kernel_initializer=tf.truncated_normal_initializer(stddev=tf.sqrt(2/66)),
+                                     kernel_regularizer=regularizer, bias_regularizer=regularizer)
+
+    
+    feature_values = tf.concat(lr_list + [net], axis = 1)
+    logits = tf.reduce_sum(feature_values, axis=1) + lr_bias
     # Compute predictions.
     predicted_classes = tf.cast(tf.greater(logits, 0), tf.int64)
     probabilities = tf.nn.sigmoid(logits)

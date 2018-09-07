@@ -1,51 +1,51 @@
 import tensorflow as tf
 
+
 def my_model(features, labels, mode, params):
     alpha = params['alpha']
     if alpha > 0:
         regularizer = tf.contrib.layers.l1_regularizer(alpha)
     else:
         regularizer = None
-    
+
     lr_list = []
-    fm_list = []
-    with tf.variable_scope('input_layer'):
+    with tf.variable_scope('liner_layer'):
         for k, v in features.items():
-            embedding_table = tf.get_variable(k + '_embed_lr', [params['feature_dim'][k], 1], 
-                                              initializer=tf.truncated_normal_initializer(tf.sqrt(2/66)), regularizer=regularizer)
+            embedding_table = tf.get_variable(k + '_embed_lr', [params['feature_dim'][k], params['num_lr']],
+                                              initializer=tf.truncated_normal_initializer(tf.sqrt(2/66)))
             embedded_var = tf.nn.embedding_lookup(embedding_table, v)
             lr_list.append(embedded_var)
-            
-        for k, v in features.items():
-            embedding_table = tf.get_variable(k + '_embed_fm', [params['feature_columns'][k], params['hidden_fields']], 
-                                              initializer=tf.truncated_normal_initializer(tf.sqrt(2/66)), regularizer=regularizer)
-            embedded_var = tf.nn.embedding_lookup(embedding_table, v)
-            fm_list.append(embedded_var)
-            
-        lr_bias = tf.get_variable('lr_bias', shape=(), dtype=tf.float32, 
-                                  initializer=tf.truncated_normal_initializer(tf.sqrt(2/66)), regularizer=regularizer)
-        
-    # lr_matrix = tf.stack(lr_list, axis = 1)
-    
-    fm_matrix = tf.stack(fm_list, axis = 1)
-    
-    sum_squre = tf.reduce_sum(fm_matrix, axis=1)
-    sum_squre = tf.square(sum_squre)
-    
-    squre_sum = tf.square(fm_matrix)
-    squre_sum = tf.reduce_sum(squre_sum, axis=1)
-    
-    nfm_input = sum_squre - squre_sum
-    with tf.variable_scope('nfm_layer'):
-        net = nfm_input
-        for _ in range(params['num_layer']):
-            net = tf.layers.dense(net, units=params['hidden_fields'], activation=params['activation'],
-                                     kernel_initializer=tf.truncated_normal_initializer(stddev=tf.sqrt(2/66)),
-                                     kernel_regularizer=regularizer, bias_regularizer=regularizer)
 
-    
-    feature_values = tf.concat(lr_list + [net], axis = 1)
-    logits = tf.reduce_sum(feature_values, axis=1) + lr_bias
+        lr_bias = tf.get_variable('lr_bias', shape=(params['num_lr']), dtype=tf.float32,
+                                  initializer=tf.truncated_normal_initializer(tf.sqrt(2/66)), regularizer=regularizer)
+
+    lr_matrix = tf.stack(lr_list, axis=1)
+    net_lr = tf.reduce_sum(lr_matrix, axis=1)
+    net_lr = net_lr + lr_bias
+    tf.logging.info('net_lr shape {}'.format(net_lr.get_shape().as_list()))
+    net_lr = tf.nn.sigmoid(net_lr)
+
+    mlr_list = []
+    with tf.variable_scope('mlr_input'):
+        for k, v in features.items():
+            embedding_table = tf.get_variable(k + '_embed_mlr', [params['feature_dim'][k], 2],
+                                              initializer=tf.truncated_normal_initializer(tf.sqrt(2/66)))
+            embedded_var = tf.nn.embedding_lookup(embedding_table, v)
+            mlr_list.append(embedded_var)
+
+    mlr_matrix = tf.concat(mlr_list, axis=1)
+    net_mlr = tf.nn.relu(mlr_matrix)
+
+    with tf.variable_scope('mlr_net'):
+        net_mlr = tf.layers.dense(net_mlr, units=params['num_lr'], activation=tf.nn.relu,
+                              kernel_initializer=tf.truncated_normal_initializer(stddev=tf.sqrt(2 / 66)),
+                              kernel_regularizer=regularizer, bias_regularizer=regularizer)
+    net_mlr = tf.nn.softmax(net_mlr, axis=1)
+    tf.logging.info('net_mlr shape {}'.format(net_mlr.get_shape().as_list()))
+    final = net_mlr * net_lr
+    tf.logging.info('final shape {}'.format(final.get_shape().as_list()))
+    logits = tf.reduce_sum(final, axis=1)
+
     # Compute predictions.
     predicted_classes = tf.cast(tf.greater(logits, 0), tf.int64)
     probabilities = tf.nn.sigmoid(logits)
@@ -74,10 +74,9 @@ def my_model(features, labels, mode, params):
     # Create training op.
     assert mode == tf.estimator.ModeKeys.TRAIN
 
-    learn_rate = params.get('learn_rate', 0.001)
+    learn_rate = params.get('learn_rate', 1)
     optimizer = tf.train.AdamOptimizer(learning_rate=learn_rate)
     adam_op = optimizer.minimize(loss, global_step=tf.train.get_global_step())
-
 
     optimizer = tf.train.GradientDescentOptimizer(learning_rate=learn_rate)
     sgd_op = optimizer.minimize(loss, global_step=tf.train.get_global_step())
@@ -89,9 +88,9 @@ def my_model(features, labels, mode, params):
 
     return tf.estimator.EstimatorSpec(mode, loss=loss, train_op=train_op)
 
+
 class MyModel(tf.estimator.Estimator):
     def __init__(self, model_dir=None, config=None, params=None,
                  warm_start_from=None):
         super().__init__(my_model, model_dir=model_dir, config=config, params=params,
                          warm_start_from=warm_start_from)
-        
